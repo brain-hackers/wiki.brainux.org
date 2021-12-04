@@ -13,8 +13,8 @@ tags:
 
 
 # 前提
- - [Linux＞ビルド](https://github.com/brain-hackers/README/wiki/Linux%EF%BC%9E%E3%83%93%E3%83%AB%E3%83%89)にてLinuxをビルドしていること
- - [U-Boot＞ビルド＞buildbrain](https://github.com/brain-hackers/README/wiki/U%E2%80%90Boot%EF%BC%9E%E3%83%93%E3%83%AB%E3%83%89%EF%BC%9Ebuildbrain)または[U‐Boot＞ビルド＞手動](https://github.com/brain-hackers/README/wiki/U%E2%80%90Boot%EF%BC%9E%E3%83%93%E3%83%AB%E3%83%89%EF%BC%9E%E6%89%8B%E5%8B%95)にてU-Bootをビルドしていること(現在執筆中)
+- [U-Boot のビルド](/u-boot/u-boot-build/)にてU-Bootをビルドしていること
+- [Linux のビルド](/linux/linux-build/)にてLinuxをビルドしていること
 
 
 # パーティションを区切る

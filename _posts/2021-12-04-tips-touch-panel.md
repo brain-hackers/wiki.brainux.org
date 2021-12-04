@@ -12,7 +12,7 @@ tags:
 # 事前に
 Xorgの設定ファイル ( xorg.conf )を設定していない場合は、下記のWikiを参照して設定してください。  
 
-[Tips＞Xorg](https://github.com/brain-hackers/README/wiki/Tips%EF%BC%9EXorg#xorgconf)
+[Xorg](/linux/linux-xorg/)
 
 # 必要なパッケージのインストール
 ```

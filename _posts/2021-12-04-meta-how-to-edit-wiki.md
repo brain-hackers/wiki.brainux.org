@@ -16,6 +16,32 @@ WikiをCloneします。
 $ git clone git@github.com:brain-hackers/wiki.brainux.org.git
 ```
 
+何らかの方法でRubyをインストールし、手元でのビルドに必要な依存関係をインストールします。
+
+```sh
+$ cd wiki.brainux.org
+$ bundle install
+```
+
+ビルドとプレビューができることを確認します。下記のように `bundle exec jekyll serve` を実行すると localhost:4000 でサーバーが
+起動している旨のメッセージが出るので、メッセージが見え次第ブラウザで `localhost:4000` を開いてプレビューできます。
+
+```sh
+$ bundle exec jekyll serve
+Configuration file: /Users/takumi/dev/brain/wiki.brainux.org/_config.yml
+            Source: /Users/takumi/dev/brain/wiki.brainux.org
+       Destination: /Users/takumi/dev/brain/wiki.brainux.org/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+      Remote Theme: Using theme mmistakes/minimal-mistakes
+       Jekyll Feed: Generating feed for posts
+   GitHub Metadata: No GitHub API authentication could be found. Some fields may be missing or have incorrect data.
+                    done in 53.672 seconds.
+ Auto-regeneration: enabled for '/Users/takumi/dev/brain/wiki.brainux.org'
+    Server address: http://127.0.0.1:4000
+  Server running... press ctrl-c to stop.
+````
+
 
 # 各種操作
 
@@ -110,7 +136,7 @@ Markdown はリッチなレンダリングがなくとも読めるシンタッ�
 ### 必ずプレビューして確認する
 ブラウザで文書を編集すると、コミット前に文書を HTML にレンダーするプレビューが利用可能です。ミスがないか確認してからコミットしましょう。
 
-ローカルのコンソールやエディタで書く場合も、Markdown をプレビューできる環境を用意して確認してからコミットしましょう。例えば [Grip](https://github.com/joeyespo/grip) が便利です。
+ローカルのコンソールやエディタで書く場合も、Markdown をプレビューできる環境を用意して確認してからコミットしましょう。
 
 
 ### 改行コードは LF に統一する
@@ -176,6 +202,6 @@ ls -l
 
 
 ### 明示的改行はバックスラッシュで行う
-この節でいう明示的改行とは [Hard line breaks](https://github.github.com/gfm/#hard-line-breaks) のことで、空行による段落区切りや単一の LF による Soft line break ではなく確実に改行を入れることを指します。必要でない限りは使わないことが望ましいです。
+この節でいう明示的改行とは Hard line breaks のことで、空行による段落区切りや単一の LF による Soft line break ではなく確実に改行を入れることを指します。必要でない限りは使わないことが望ましいです。
 
 明示的な改行の入れ方には行末にスペース2つを入れる方法とバックスラッシュを入れる方法がありまず。前者は通常不可視な上に意味合いがわかりづらいため、バックスラッシュを使用します。

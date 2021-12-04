@@ -15,10 +15,6 @@ tags:
 本項では上記のいずれかを使用していることを前提で記述します。
 
 
-#前提
-この頁の内容を実行する前に[U‐Boot＞ビルド＞buildbrain](https://github.com/brain-hackers/README/wiki/U%E2%80%90Boot%EF%BC%9E%E3%83%93%E3%83%AB%E3%83%89%EF%BC%9Ebuildbrain)の内容を実行してください。
-
-
 # 依存関係のインストール
 以下のコマンドで依存関係をインストールします。
 
@@ -72,4 +68,4 @@ Linuxのカーネルの準備ができたら、カーネルの上で動くアプ
 +   52      apt install -y fbterm uim-fep uim-mozc
 ```
 
-[SDカードにコピー](https://github.com/brain-hackers/README/wiki/Linux＞SDカードにコピー)に続く…
+[SD カードへのコピー](/linux/linux-copy-sd-card/)に続く…

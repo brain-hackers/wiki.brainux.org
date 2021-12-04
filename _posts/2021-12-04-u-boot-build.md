@@ -16,7 +16,7 @@ tags:
 
 
 # 環境の構築
-[Linux＞ビルド](https://github.com/brain-hackers/README/wiki/Linux%EF%BC%9E%E3%83%93%E3%83%AB%E3%83%89)の頁で既に構築している場合は飛ばします。
+[Linux のビルド](/linux/linux-build/)の頁で既に構築している場合は飛ばします。
 
 
 ## 依存関係のインストール
@@ -50,4 +50,4 @@ git clone --recursive https://github.com/brain-hackers/buildbrain.git
 5. `make nk.bin` を実行します
 
 
-[Linux＞ビルド](https://github.com/brain-hackers/README/wiki/Linux%EF%BC%9E%E3%83%93%E3%83%AB%E3%83%89)に続く…
+[Linux のビルド](/linux/linux-build/)に続く…
