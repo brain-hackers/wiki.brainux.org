@@ -59,6 +59,8 @@ plugins:
 atom_feed:
   hide: true
 
+og_image: "assets/images/og_image.jpg"
+
 stay_on_top_categories:
   - 初めての方へ
   - a
