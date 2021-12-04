@@ -1,9 +1,7 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
+  - title: "初めての方へ"
+    url: /for%20beginners/beginner-get-started/
+  - title: "タグ一覧"
     url: /tags/
-  - title: "About"
+  - title: "この Wiki について"
     url: /about/

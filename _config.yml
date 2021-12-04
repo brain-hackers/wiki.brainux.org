@@ -13,14 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+title: Brain Hackers Wiki
+author: Brain Hackers
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
+  The Wiki of Brain Hackers
+twitter_username: brainhackerz
+github_username: brain-hackers
 minimal_mistakes_skin: default
 search: true
 
@@ -29,8 +27,9 @@ markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /page:num/
+locale: ja
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
@@ -39,14 +38,14 @@ include:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+   - Gemfile
+   - Gemfile.lock
+   - node_modules
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
 
 # Plugins (previously gems:)
 plugins:
@@ -57,35 +56,24 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+atom_feed:
+  hide: true
+
+stay_on_top_categories:
+  - 初めての方へ
+  - a
 
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/brainhackerz"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/brain-hackers"
+    - label: "Brainux.org"
+      icon: "fas fa-globe-asia"
+      url: "https://brainux.org/"
 
 defaults:
   # _posts
@@ -94,18 +82,19 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
+      author_profile: false
       comments: true
-      share: true
-      related: true
+      show_date: false
+      toc: true
+      toc_sticky: true
   # _pages
   - scope:
       path: "_pages"
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
+      show_date: false
 
 category_archive:
   type: liquid
