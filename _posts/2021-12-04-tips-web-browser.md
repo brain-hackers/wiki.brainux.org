@@ -1,11 +1,14 @@
 ---
 title: Web ブラウザ
 categories:
+  - Tips
   - Linux
 tags:
   - Linux
   - GUI
+excerpt: Brainux で利用可能な Web ブラウザについて
 ---
+
 
 
 # グラフィカルブラウザ

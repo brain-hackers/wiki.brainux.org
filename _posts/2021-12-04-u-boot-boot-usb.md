@@ -4,6 +4,7 @@ categories:
   - U-Boot
 tags:
   - U-Boot
+# excerpt: "記事が書けたらこの行をアンコメントして記入してください"
 ---
 
 

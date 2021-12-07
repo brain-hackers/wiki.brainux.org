@@ -1,12 +1,15 @@
 ---
 title: タッチパネル
 categories:
+  - Tips
   - Linux
 tags:
   - Linux
   - GUI
   - 周辺機器
+excerpt: タッチパネルのキャリブレーション（Brainux に同梱されているため手動インストールは不要）
 ---
+
 
 
 # 事前に

@@ -5,6 +5,7 @@ categories:
 tags:
   - Linux
   - 自力ビルド
+excerpt: ""
 ---
 
 
