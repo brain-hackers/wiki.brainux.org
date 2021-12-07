@@ -1,6 +1,7 @@
 ---
 title: USB Ethernet Gadget
 categories:
+  - Tips
   - Linux
 tags:
   - Linux

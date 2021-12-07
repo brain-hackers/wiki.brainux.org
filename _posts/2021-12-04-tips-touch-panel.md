@@ -1,6 +1,7 @@
 ---
 title: タッチパネル
 categories:
+  - Tips
   - Linux
 tags:
   - Linux
