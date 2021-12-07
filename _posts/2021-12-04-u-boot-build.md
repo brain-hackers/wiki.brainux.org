@@ -5,6 +5,7 @@ categories:
 tags:
   - U-Boot
   - 自力ビルド
+excerpt: ""
 ---
 
 

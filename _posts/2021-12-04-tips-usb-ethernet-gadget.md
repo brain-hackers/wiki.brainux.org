@@ -7,7 +7,9 @@ tags:
   - Linux
   - USB
   - 周辺機器
+excerpt: PC と USB ケーブル1本で接続できる便利な仕組みとその導入方法
 ---
+
 
 
 # USB Gadget とは？

@@ -5,6 +5,7 @@ categories:
 tags:
   - Linux
   - GUI
+excerpt: Brain 特有の Xorg の設定について
 ---
 
 
