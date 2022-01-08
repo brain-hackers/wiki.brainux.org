@@ -11,13 +11,29 @@ excerpt: ""
 
 # 準備
 
-WikiをCloneします。
+Githubにログインした状態でWikiをCloneします。
 
 ```sh
 $ git clone git@github.com:brain-hackers/wiki.brainux.org.git
 ```
 
-何らかの方法でRubyをインストールし、手元でのビルドに必要な依存関係をインストールします。
+
+まずapt以外でインストールしたRubyをアンインストールします。
+
+
+次にRuby2.7をインストールします。
+
+```sh
+$ sudo apt install ruby-full
+```
+
+```sh
+$ ruby -v
+ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux-gnu]
+```
+
+次に手元でのビルドに必要な依存関係をインストールします。
+
 
 ```sh
 $ cd wiki.brainux.org
