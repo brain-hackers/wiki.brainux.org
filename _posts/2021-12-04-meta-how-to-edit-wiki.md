@@ -11,13 +11,28 @@ excerpt: ""
 
 # 準備
 
-WikiをCloneします。
+GitHubにログインした状態でWikiをcloneします。
 
 ```sh
 $ git clone git@github.com:brain-hackers/wiki.brainux.org.git
 ```
 
-何らかの方法でRubyをインストールし、手元でのビルドに必要な依存関係をインストールします。
+2022/1/8現在、Ubuntu 20.04.3 LTSでは以下のコマンドでRuby 2.7がインストールされます。お使いのディストリビューション標準のパッケージマネージャーでRuby 2.7系がインストールできない場合、rbenvを使うなどして適宜Ruby 2.7系の最新バージョンをインストールしてください。
+
+
+```sh
+$ sudo apt install ruby-full
+```
+
+Rubyがインストールできたら、以下のようにしてRuby 2.7が実行されることを確認します。
+
+```sh
+$ ruby -v
+ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux-gnu]
+```
+
+次に手元でのビルドに必要な依存関係をインストールします。
+
 
 ```sh
 $ cd wiki.brainux.org

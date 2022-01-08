@@ -20,7 +20,7 @@ excerpt: ""
 以下のコマンドで依存関係をインストールします。
 
 ```sh
-sudo apt install build-essential bison flex libncurses5-dev gcc-arm-linux-gnueabi debootstrap qemu-user-static
+sudo apt install build-essential bison flex libncurses5-dev gcc-arm-linux-gnueabi gcc-arm-linux-gnueabihf libssl-dev bc lzop qemu-user-static debootstrap kpartx
 ```
 
 
