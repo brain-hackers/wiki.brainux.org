@@ -11,21 +11,20 @@ excerpt: ""
 
 # 準備
 
-Githubにログインした状態でWikiをCloneします。
+GitHubにログインした状態でWikiをcloneします。
 
 ```sh
 $ git clone git@github.com:brain-hackers/wiki.brainux.org.git
 ```
 
+2022/1/8現在、Ubuntu 20.04.3 LTSでは以下のコマンドでRuby 2.7がインストールされます。お使いのディストリビューション標準のパッケージマネージャーでRuby 2.7系がインストールできない場合、rbenvを使うなどして適宜Ruby 2.7系の最新バージョンをインストールしてください。
 
-まずapt以外でインストールしたRubyをアンインストールします。
-
-
-次にRuby2.7をインストールします。
 
 ```sh
 $ sudo apt install ruby-full
 ```
+
+Rubyがインストールできたら、以下のようにしてRuby 2.7が実行されることを確認します。
 
 ```sh
 $ ruby -v
