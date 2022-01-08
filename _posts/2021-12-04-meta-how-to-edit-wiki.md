@@ -172,6 +172,7 @@ git config --global core.autocrlf input
 
  - 段落と段落の間
  - プレーンテキストとプレーンテキスト以外の要素の間
+   - 節タイトル
    - 箇条書き
    - テーブル
    - 図
