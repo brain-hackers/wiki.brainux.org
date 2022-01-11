@@ -11,6 +11,7 @@ excerpt: ""
 
 <img src="/assets/images/happy.png">
 
+
 # はじめに
 
 このページでは、SHARP Brain で Linux を動かす試みから生まれた Linux ディストリビューション **Brainux** を手軽に起動する方法をご紹介します。
@@ -61,34 +62,34 @@ macOS もしくは Linux をお使いの場合は、ZIP を展開して取り出
 
  2. "Flash from file" をクリックし、ダウンロードした ZIP ファイルを選択します
 
-   - 展開する必要はありません
+    - 展開する必要はありません
 
-   <img src="/assets/images/etcher1.png" width=500px>
+    <img src="/assets/images/etcher1.png" width=300px>
 
-   <img src="/assets/images/etcher2.png" width=500px>
+    <img src="/assets/images/etcher2.png" width=300px>
 
 
  3. "Select target" をクリックして書き込み先を選択します
 
-   - 正しい SD カードを選択しているか慎重に確認してください
-   - 4GB 以上の SD カードであればなんでも使用可能です
-   - SD カードの性能がシステムの使用感に直結するため高速な SD カードを使用することをおすすめします
-   - 画像では 8GB の SD カードを選択しています
+    - 正しい SD カードを選択しているか慎重に確認してください
+    - 4GB 以上の SD カードであればなんでも使用可能です
+    - SD カードの性能がシステムの使用感に直結するため高速な SD カードを使用することをおすすめします
+    - 画像では 8GB の SD カードを選択しています
 
-   <img src="/assets/images/etcher3.png" width=500px>
+    <img src="/assets/images/etcher3.png" width=500px>
 
-   <img src="/assets/images/etcher4.png" width=500px>
+    <img src="/assets/images/etcher4.png" width=500px>
 
  4. "Flash!" をクリックして書き込みます
 
-   - 改めて正しい SD カードが選択されているか確認した上で書き込んでください
-   - 書き込みには管理者権限が必要なため管理者パスワードを入力します
+    - 改めて正しい SD カードが選択されているか確認した上で書き込んでください
+    - 書き込みには管理者権限が必要なため管理者パスワードを入力します
 
-   <img src="/assets/images/etcher5.png" width=500px>
+    <img src="/assets/images/etcher5.png" width=500px>
 
-   <img src="/assets/images/etcher6.png" width=500px>
+    <img src="/assets/images/etcher6.png" width=500px>
 
-   <img src="/assets/images/etcher7.png" width=500px>
+    <img src="/assets/images/etcher7.png" width=500px>
 
  5. 完成！
 
@@ -102,8 +103,8 @@ macOS もしくは Linux をお使いの場合は、`dd` コマンドでも書�
 
 ### macOS の場合
 
- - macOS では `/dev/disk*` に書き込むと非常に遅いため `/dev/rdisk*` を使用します
- - どのディスクが SD カードかはディスクユーティリティを使用して確認します
+- macOS では `/dev/disk*` に書き込むと非常に遅いため `/dev/rdisk*` を使用します
+- どのディスクが SD カードかはディスクユーティリティを使用して確認します
 
 以下に実行例を示します。バージョン番号は適宜読み替えてください。
 
@@ -136,15 +137,16 @@ sudo dd if=~/Downloads/sdimage-2021-02-21-162410.img of=/dev/sdc bs=10M
 
 Brain における Linux の動作はまだ初期段階であり、一部のハードウェアしか利用できません。
 
+
 ## キーボード (Sx1, Sx2)
 
 キーが非常に少ない Brain のキーボードで必要な記号を打つため、キーボードの使用方法は特殊になっています。キートップに記載されたキー以外の文字は、すべて「記号」キーと「シフト」キーを組み合わせて入力します。
 
 Shift キー・Ctrl キー・Alt キーは現実のキーボードに近い配置として以下のように対応させています。
 
- - Shift → 「シフト」
- - Ctrl → ページアップキー（《 を横に倒した記号のキー）
- - Alt → 「文字切り替え」キー
+- Shift → 「シフト」
+- Ctrl → ページアップキー（《 を横に倒した記号のキー）
+- Alt → 「文字切り替え」キー
 
 キーと入力される文字のマップを以下に示します。
 

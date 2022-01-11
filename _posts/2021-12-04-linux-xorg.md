@@ -18,6 +18,7 @@ PW-Sx7 までは SoC に GPU が載っておらず、framebuffer (fbdev) のみ�
 
 設定ファイル xorg.conf の内容を以下に示します。vi か nano を使って以下の内容を `/etc/X11/xorg.conf` に書き込んでください。
 
+<!-- markdownlint-disable fenced-code-language -->
 ```
 Section "Device"
         Identifier "device"
@@ -28,6 +29,7 @@ Section "Screen"
         Device     "device"
 EndSection
 ```
+<!-- markdownlint-enable fenced-code-language -->
 
 
 # 起こし方
