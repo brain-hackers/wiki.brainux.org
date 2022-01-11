@@ -77,8 +77,8 @@ $ source ./env/bin/activate
 Textlintを動かして、正常にlintされるか試します。自動修正は`npm run fix`で発動できますが、意図しない修正が起こる可能性があるためあまりおすすめしません。
 
 ```sh
-$ npm run lint
-$ npm run fix  # お好みで
+$ npm run textlint
+$ npm run textlint-fix  # お好みで
 ```
 
 markdownlintを動かして、正常にlintされるか試します。
