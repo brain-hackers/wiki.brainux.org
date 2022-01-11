@@ -19,7 +19,7 @@ excerpt: ""
 
 # 環境の構築
 
-[Linux のビルド](/linux/linux-build/)の頁で既に構築している場合は飛ばします。
+[Linux のビルド](/linux/linux-build/)の頁ですでに構築している場合は飛ばします。
 
 
 ## 依存関係のインストール

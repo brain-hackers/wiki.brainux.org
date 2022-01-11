@@ -11,7 +11,7 @@ excerpt: Brain 特有の Xorg の設定について
 
 # Brain 特有の Xorg の設定について
 
-PW-Sx7 までは SoC に GPU が載っておらず、framebuffer (fbdev) のみが利用可能です。つまり、お手元の Linux マシンで Xorg が GPU と通信するときに使う仕組み (DRM, DRI) は利用できません。設定ファイルに fbdev を使用するように明示的に書くことで Xorg が動かせます。
+PW-Sx7 までは SoC に GPU が載っておらず、framebuffer (fbdev) のみが利用可能です。つまり、お手元の Linux マシンで Xorg が GPU と通信するときに使うしくみ (DRM, DRI) は利用できません。設定ファイルに fbdev を使用するよう明示的に書くことで Xorg が動かせます。
 
 
 # xorg.conf
