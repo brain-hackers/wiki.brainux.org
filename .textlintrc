@@ -1,6 +1,8 @@
 {
   "rules": {
-    "preset-japanese": true,
+    "preset-japanese": {
+        "sentence-length": false,
+    },
     "prh": {
       "rulePaths": [
         "prh_rules/wiki.yml"
