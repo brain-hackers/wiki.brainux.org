@@ -74,7 +74,7 @@ $ source ./env/bin/activate
 (env) $ npm install
 ```
 
-Textlintを動かして、正常にlintされるか試します。`npm run fix`で発動する自動修正は、誤検知も意図せず修正してしまう可能性があるため事前によくチェックしてから実行してください。
+Textlintを動かして、正常にlintされるか試します。`npm run textlint-fix`で発動する自動修正は、誤検知も意図せず修正してしまう可能性があるため事前によくチェックしてから実行してください。
 
 ```sh
 $ npm run textlint
