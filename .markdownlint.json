@@ -1,0 +1,17 @@
+{
+    "no-inline-html": {
+        "allowed_elements": [
+            "img"
+        ]
+    },
+    "blanks-around-headings": {
+        "lines_above": 2,
+        "lines_below": 1
+    },
+    "no-multiple-blanks": {
+        "maximum": 2
+    },
+    "single-title": false,
+    "line-length": false,
+    "commands-show-output": false
+}

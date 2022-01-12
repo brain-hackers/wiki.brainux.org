@@ -10,6 +10,7 @@ excerpt: ""
 
 
 # 動作環境
+
 - Debian 10 (Buster)
 - Ubuntu 20.04 LTS
 
@@ -17,10 +18,12 @@ excerpt: ""
 
 
 # 環境の構築
-[Linux のビルド](/linux/linux-build/)の頁で既に構築している場合は飛ばします。
+
+[Linux のビルド](/linux/linux-build/)の頁ですでに構築している場合は飛ばします。
 
 
 ## 依存関係のインストール
+
 以下のコマンドで依存関係をインストールしてください。
 
 ```sh
@@ -29,20 +32,22 @@ sudo apt install build-essential bison flex libncurses5-dev gcc-arm-linux-gnueab
 
 
 ## Gitリポジトリのクローン
+
 Gitリポジトリをクローンして、必要なファイルをダウンロードします。長い時間がかかるので、時間のある時に実いましょう。
 
-```
+```sh
 git clone --recursive https://github.com/brain-hackers/buildbrain.git
 ```
 
 
 # U-Bootのビルドとnk.binの作成
+
 1. `cd buildbrain` で `buildbrain` ディレクトリに入ります
 
 2. `make udefconfig-sh*` を実行して、 `.config` ファイルを作成します
 
-   - PW-Sx1のとき： `make udefconfig-sh1`
-   - PW-Sx5のとき： `make udefconfig-sh5`
+    - PW-Sx1のとき： `make udefconfig-sh1`
+    - PW-Sx5のとき： `make udefconfig-sh5`
 
 3. `make ubuild` を実行して `u-boot.sb` を生成します
 

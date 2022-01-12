@@ -11,15 +11,16 @@ excerpt: ""
 
 <img src="/assets/images/happy.png">
 
-# はじめに
 
-このページでは、SHARP Brain で Linux を動かす試みから生まれた Linux ディストリビューション **Brainux** を手軽に起動する方法をご紹介します。
+# 始めに
 
-Linux ディストリビューションは、2つの大きな要素としてカーネルとそれ以外のソフトウェアの組み合わせでできています。Brain の場合はカーネルを起動するブートローダーも SD カード上に必要なため、正確にはカーネル・ソフトウェア・ブートローダーのセットが必要になります。
+このページでは、SHARP Brain で Linux を動かす試みから生まれた Linux ディストリビューション **Brainux** を手軽に起動する方法を紹介します。
 
-リポジトリ [buildbrain](https://github.com/brain-hackers/buildbrain) では、Raspberry Pi と同様に SD カードに書き込むだけで起動可能にした SD イメージを公開しています。ちなみにカーネル・ソフトウェア・ブートローダーはどれも自力で準備することもできます。くわしくは本 Wiki の対応するページを参照してください。
+Linux ディストリビューションは、カーネルとそれ以外のソフトウェアの組み合わせです。Brain の場合はカーネルを起動するブートローダも SD カード上に必要なため、正確にはカーネル・ソフトウェア・ブートローダのセットが必要になります。
 
-質問がある場合や開発に参加したい場合は、まず [Brain Hackers の Discord](https://github.com/brain-hackers/README) に参加して頂き、「雑談」チャンネルでお気軽にご質問ください。
+リポジトリ [buildbrain](https://github.com/brain-hackers/buildbrain) では、Raspberry Pi と同様に SD カードに書き込むだけで起動可能にした SD イメージを公開しています。ちなみにカーネル・ソフトウェア・ブートローダはどれも自力で準備することもできます。詳しくは本 Wiki の対応するページを参照してください。
+
+質問がある場合や開発に参加したい場合は、まず [Brain Hackers の Discord](https://github.com/brain-hackers/README) に参加していただき、「雑談」チャンネルでお気軽にご質問ください。
 
 
 # 対応している機種
@@ -48,7 +49,7 @@ Linux ディストリビューションは、2つの大きな要素としてカ�
 
 # SD カードに書き込む
 
-書き込むソフトは Windows / macOS / Linux のどれをお使いの場合でも利用可能な balenaEtcher がおすすめです。[公式サイト](https://www.balena.io/etcher/)にアクセスしてダウンロードしてください。
+書き込むソフトは Windows / macOS / Linux のどれをお使いの場合でも利用可能な balenaEtcher がお勧めです。[公式サイト](https://www.balena.io/etcher/)にアクセスしてダウンロードしてください。
 
 macOS もしくは Linux をお使いの場合は、ZIP を展開して取り出した .img ファイルを `dd` コマンドでそのまま書くことも可能です。
 
@@ -61,38 +62,38 @@ macOS もしくは Linux をお使いの場合は、ZIP を展開して取り出
 
  2. "Flash from file" をクリックし、ダウンロードした ZIP ファイルを選択します
 
-   - 展開する必要はありません
+    - 展開する必要はありません
 
-   <img src="/assets/images/etcher1.png" width=500px>
+    <img src="/assets/images/etcher1.png" width=300px>
 
-   <img src="/assets/images/etcher2.png" width=500px>
+    <img src="/assets/images/etcher2.png" width=300px>
 
 
  3. "Select target" をクリックして書き込み先を選択します
 
-   - 正しい SD カードを選択しているか慎重に確認してください
-   - 4GB 以上の SD カードであればなんでも使用可能です
-   - SD カードの性能がシステムの使用感に直結するため高速な SD カードを使用することをおすすめします
-   - 画像では 8GB の SD カードを選択しています
+    - 正しい SD カードを選択しているか慎重に確認してください
+    - 4GB 以上の SD カードであればなんでも使用可能です
+    - SD カードの性能がシステムの使用感に直結するため高速な SD カードを使用することをお勧めします
+    - 画像では 8GB の SD カードを選択しています
 
-   <img src="/assets/images/etcher3.png" width=500px>
+    <img src="/assets/images/etcher3.png" width=300px>
 
-   <img src="/assets/images/etcher4.png" width=500px>
+    <img src="/assets/images/etcher4.png" width=300px>
 
  4. "Flash!" をクリックして書き込みます
 
-   - 改めて正しい SD カードが選択されているか確認した上で書き込んでください
-   - 書き込みには管理者権限が必要なため管理者パスワードを入力します
+    - あらためて正しい SD カードが選択されているか確認したうえで書き込んでください
+    - 書き込みには管理者権限が必要なため管理者パスワードを入力します
 
-   <img src="/assets/images/etcher5.png" width=500px>
+    <img src="/assets/images/etcher5.png" width=300px>
 
-   <img src="/assets/images/etcher6.png" width=500px>
+    <img src="/assets/images/etcher6.png" width=300px>
 
-   <img src="/assets/images/etcher7.png" width=500px>
+    <img src="/assets/images/etcher7.png" width=300px>
 
  5. 完成！
 
-   <img src="/assets/images/etcher8.png" width=500px>
+    <img src="/assets/images/etcher8.png" width=300px>
 
 
 ## dd を使う場合
@@ -102,8 +103,8 @@ macOS もしくは Linux をお使いの場合は、`dd` コマンドでも書�
 
 ### macOS の場合
 
- - macOS では `/dev/disk*` に書き込むと非常に遅いため `/dev/rdisk*` を使用します
- - どのディスクが SD カードかはディスクユーティリティを使用して確認します
+- macOS では `/dev/disk*` に書き込むと非常に遅いため `/dev/rdisk*` を使用します
+- どのディスクが SD カードかはディスクユーティリティを使用して確認します
 
 以下に実行例を示します。バージョン番号は適宜読み替えてください。
 
@@ -129,12 +130,13 @@ sudo dd if=~/Downloads/sdimage-2021-02-21-162410.img of=/dev/sdc bs=10M
 
 書き込み終わった SD カードを Brain に挿入し、リセットボタンを押します。Brain のロゴが表示されたあと U-Boot が起動し、すぐ後に Linux が起動します。
 
-本体の内蔵キーボードに対応している機種では、ログインシェルが表示されたらユーザー名とパスワードともに `root` でログインできます。非対応の機種では、電源供給が可能なタイプの OTG ケーブルを使用してキーボードを繋ぐと操作できます。
+本体の内蔵キーボードに対応している機種では、ログインシェルが表示されたらユーザー名とパスワードともに `root` でログインできます。非対応の機種では、電源供給が可能なタイプの OTG ケーブルを使用してキーボードをつなぐと操作できます。
 
 
 # 内蔵ハードウェア
 
 Brain における Linux の動作はまだ初期段階であり、一部のハードウェアしか利用できません。
+
 
 ## キーボード (Sx1, Sx2)
 
@@ -142,9 +144,9 @@ Brain における Linux の動作はまだ初期段階であり、一部のハ�
 
 Shift キー・Ctrl キー・Alt キーは現実のキーボードに近い配置として以下のように対応させています。
 
- - Shift → 「シフト」
- - Ctrl → ページアップキー（《 を横に倒した記号のキー）
- - Alt → 「文字切り替え」キー
+- Shift → 「シフト」
+- Ctrl → ページアップキー（《 を横に倒した記号のキー）
+- Alt → 「文字切り替え」キー
 
 キーと入力される文字のマップを以下に示します。
 
