@@ -76,24 +76,24 @@ macOS もしくは Linux をお使いの場合は、ZIP を展開して取り出
     - SD カードの性能がシステムの使用感に直結するため高速な SD カードを使用することをお勧めします
     - 画像では 8GB の SD カードを選択しています
 
-    <img src="/assets/images/etcher3.png" width=500px>
+    <img src="/assets/images/etcher3.png" width=300px>
 
-    <img src="/assets/images/etcher4.png" width=500px>
+    <img src="/assets/images/etcher4.png" width=300px>
 
  4. "Flash!" をクリックして書き込みます
 
     - あらためて正しい SD カードが選択されているか確認したうえで書き込んでください
     - 書き込みには管理者権限が必要なため管理者パスワードを入力します
 
-    <img src="/assets/images/etcher5.png" width=500px>
+    <img src="/assets/images/etcher5.png" width=300px>
 
-    <img src="/assets/images/etcher6.png" width=500px>
+    <img src="/assets/images/etcher6.png" width=300px>
 
-    <img src="/assets/images/etcher7.png" width=500px>
+    <img src="/assets/images/etcher7.png" width=300px>
 
  5. 完成！
 
-   <img src="/assets/images/etcher8.png" width=500px>
+    <img src="/assets/images/etcher8.png" width=300px>
 
 
 ## dd を使う場合
