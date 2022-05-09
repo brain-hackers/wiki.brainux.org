@@ -1696,13 +1696,6 @@ rules:
     pattern:  /アノーテーション/
   - expected: アプレット
     pattern:  /\bApplet\b/
-  - expected: アプリケーション
-    pattern: /アプリ(?!ケ)/
-    specs:
-      - from: アプリケーション
-        to:   アプリケーション
-      - from: アプリ
-        to:   アプリケーション
   - expected: アンダースコア
     pattern:  /アンダーバー/
   - expected: イシュア
