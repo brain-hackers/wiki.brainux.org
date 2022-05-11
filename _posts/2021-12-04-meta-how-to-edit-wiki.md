@@ -60,14 +60,16 @@ Configuration file: /Users/takumi/dev/brain/wiki.brainux.org/_config.yml
   Server running... press ctrl-c to stop.
 ````
 
-次に、Textlint と markdownlint を使うために Node.js とパッケージをインストールします。
+次に、textlint と markdownlint を使うために Node.js とパッケージをインストールします。
 
 ```sh
 $ cd wiki.brainux.org
 $ npm install
 ```
 
-Node.js のインストール方法とバージョンは動けば何でも良いです。まずはパッケージマネージャーでインストールした Node.js を使ってみて、うまく行かなければ nodeenv（nodenvではない！）を使う以下の方法を試してください。nodeenv でインストールした場合は、毎回 env を activate するのを忘れないでください。
+Node.js のインストールの方法は問いませんが、不具合を減らすために、LTS を利用することをお勧めします。なお、2022年5月12日現在の LTS バージョンは [v16](https://nodejs.org/en/about/releases/) です。
+
+また、Node.js のバージョン管理の1つの選択肢として、nodeenv を利用することも可能です。nodeenv を利用する場合は、毎回 env を activate することを忘れないでください。以下に、nodeenv を pip でインストールし、利用する例を示します。
 
 ```sh
 $ pip install nodeenv
@@ -76,7 +78,7 @@ $ source ./env/bin/activate
 (env) $ npm install
 ```
 
-Textlint を動かして、正常に lint されるか試します。`npm run textlint-fix` で発動する自動修正は、誤検知も意図せず修正してしまう可能性があるため事前によくチェックしてから実行してください。
+textlint を動かして、正常に lint されるか試します。`npm run textlint-fix` で発動する自動修正は、誤検知も意図せず修正してしまう可能性があるため事前によくチェックしてから実行してください。
 
 ```sh
 $ npm run textlint
@@ -125,6 +127,7 @@ $ npm run mdlint
 - @puhitaku
 - @tka3320
 - @Sasakura-ayato
+- @Codex340
 
 注意！ GitHub の Brain Hackers organization のメンバーでない人はレビューを依頼できないので、
 Discord にてメンバー追加依頼をしてメンバーになってから Pull Request を提出しましょう。
@@ -140,7 +143,7 @@ Wiki のページを生成している Jekyll は、md ファイルの名前か�
 
 # 記述ルール
 
-Wiki の体裁に関するルールを列挙します。コミットの前に従っているかチェックしてください。一部のルールは Textlint や markdownlint を使って機械的に調べたり修正できます。
+Wiki の体裁に関するルールを列挙します。コミットの前に従っているかチェックしてください。一部のルールは textlint や markdownlint を使って機械的に調べたり修正できます。
 
 
 ## 文体
