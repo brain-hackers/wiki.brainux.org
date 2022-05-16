@@ -17,14 +17,21 @@ GitHub にログインした状態で Wiki を clone します。
 $ git clone git@github.com:brain-hackers/wiki.brainux.org.git
 ```
 
-2022年5月15日現在、Ubuntu 22.04 LTS では以下のコマンドで Ruby 3.0 がインストールされます。 Rubyのバージョンには依存しなくなりました。
+2022年5月15日現在、Ubuntu 22.04 LTS では以下のコマンドで Ruby 3.0 がインストールされます。 お使いのディストリビューション標準のパッケージマネージャーでRubyがインストールできない場合、rbenvを使うなどして適宜最新バージョンをインストールしてください。
 
 
 ```sh
 $ sudo apt install ruby-full
 ```
 
-Rubyがインストールできたら、手元でのビルドに必要な依存関係をインストールします。
+Rubyがインストールできたら、`ruby -v` コマンドでRubyが実行されることを確認します。Ubuntu 22.04 LTS では以下のように出力されます。
+
+```sh
+$ ruby -v
+ruby 3.0.2p107 (2021-07-07 revision 0db68f0233) [x86_64-linux-gnu]
+```
+
+次に手元でのビルドに必要な依存関係をインストールします。
 
 
 ```sh
