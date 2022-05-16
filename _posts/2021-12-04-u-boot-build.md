@@ -51,7 +51,7 @@ git clone --recursive https://github.com/brain-hackers/buildbrain.git
 
 3. `make ubuild` を実行して `u-boot.sb` を生成します
 
-4. `make nkbin_maker` を実行します
+4. `make nkbin-maker` を実行します
 
 5. `make nk.bin` を実行します
 

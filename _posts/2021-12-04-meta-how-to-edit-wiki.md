@@ -17,22 +17,14 @@ GitHub にログインした状態で Wiki を clone します。
 $ git clone git@github.com:brain-hackers/wiki.brainux.org.git
 ```
 
-2022/1/8 現在、Ubuntu 20.04.3 LTSでは以下のコマンドで Ruby 2.7がインストールされます。お使いのディストリビューション標準のパッケージマネージャーで Ruby 2.7 系がインストールできない場合、rbenv を使うなどして適宜 Ruby 2.7 系の最新バージョンをインストールしてください。
+2022年5月15日現在、Ubuntu 22.04 LTS では以下のコマンドで Ruby 3.0 がインストールされます。 Rubyのバージョンには依存しなくなりました。
 
 
 ```sh
 $ sudo apt install ruby-full
 ```
 
-Ruby がインストールできたら、以下のようにして Ruby 2.7 が実行されることを確認します。
-
-```sh
-$ ruby -v
-ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux-gnu]
-```
-
-次に手元でのビルドに必要な依存関係をインストールします。
-インストールには Bundler を用います。Bundler は gem を使ってインストールしてください。
+Rubyがインストールできたら、手元でのビルドに必要な依存関係をインストールします。
 
 
 ```sh
