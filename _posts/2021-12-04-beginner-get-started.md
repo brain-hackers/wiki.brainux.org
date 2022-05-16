@@ -31,15 +31,22 @@ Linux ディストリビューションは、カーネルとそれ以外のソ�
 
 |機種  |Linux 起動        |キーボード        |注釈|
 |:-----|:----------------:|:----------------:|:---|
-|PW-Sx1 より前|||PW-GC610, PW-G5300 のような数字が3桁もしくは4桁の機種|
+|PW-ACxxx, GCxxx, TC980||||
+|PW-G4000, G5000, G5100, A7000, A9000||||
+|PW-G4200, G5200 ~ 5300, A7200 ~ 7400, A9100 ~ 9300|:white_check_mark:|:white_check_mark:||
+|GX500, GX300|:white_check_mark:|:white_check_mark:|画面が非常に暗くなる|
 |PW-Sx1|:white_check_mark:|:white_check_mark:||
 |PW-Sx2|:white_check_mark:|:white_check_mark:||
-|PW-Sx3|:white_check_mark:|                  ||
+|PW-Sx3|:white_check_mark:|:white_check_mark:||
 |PW-Sx4|:white_check_mark:|                  ||
-|PW-Sx5|:white_check_mark:|                  ||
-|PW-Sx6|:white_check_mark:|                  ||
-|PW-Sx7|:white_check_mark:|                  |未リリース・Sx6 を流用可|
-|PW-x1 以降||||
+|PW-Sx5|:white_check_mark:|:white_check_mark:||
+|PW-Sx6|:white_check_mark:|:white_check_mark:||
+|PW-Sx7|:white_check_mark:|:white_check_mark:||
+|PW-HC4 ~ 6, H7700 ~ H9100|:white_check_mark:|:white_check_mark:||
+|PW-SR1 ~ 3|:white_check_mark:|:white_check_mark:||
+|PW-AA1 ~ 2|:white_check_mark:|:white_check_mark:||
+|PW-AJ1 ~ 2|:white_check_mark:|:white_check_mark:||
+|PW-x1, x2, ESxxxx, SR4||||
 
 
 # SD カードのイメージをダウンロードする
@@ -128,9 +135,28 @@ sudo dd if=~/Downloads/sdimage-2021-02-21-162410.img of=/dev/sdc bs=10M
 
 # 実機で起動する
 
+書き込み終わった SD カードを Brain に挿入して Linux を起動しましょう。起動には2つの方法があり、カバーできる機種と動作に差があります。
+
+- SDカードからの直接起動
+- BrainLILO を通じた起動
+
+
+## SDカードからの直接起動
+
 書き込み終わった SD カードを Brain に挿入し、リセットボタンを押します。Brain のロゴが表示されたあと U-Boot が起動し、すぐ後に Linux が起動します。
 
-本体の内蔵キーボードに対応している機種では、ログインシェルが表示されたらユーザー名とパスワードともに `root` でログインできます。非対応の機種では、電源供給が可能なタイプの OTG ケーブルを使用してキーボードをつなぐと操作できます。
+
+## BrainLILO を通じた起動
+
+上記の直接起動にはいくつか問題があります。これらを回避したい場合は、Windows CE 起動後に "Launch Linux" を追加アプリメニューから選択して Linux を起動します。
+
+- クロック周波数が半減する（修正予定）
+- 直接起動ができない機種を使っている: PW-G4200, G5200, A7200, A7300, A9200, GX300, GX500
+
+
+# ログイン
+
+本体の内蔵キーボードに対応している機種では、ログインシェルが表示されたらユーザー名 `user` パスワード `brain` でログインできます。非対応の機種では、電源供給が可能なタイプの OTG ケーブルを使用してキーボードをつなぐと操作できます。root ユーザーは無効になっているのでご注意ください。
 
 
 # 内蔵ハードウェア
@@ -138,15 +164,51 @@ sudo dd if=~/Downloads/sdimage-2021-02-21-162410.img of=/dev/sdc bs=10M
 Brain における Linux の動作はまだ初期段階であり、一部のハードウェアしか利用できません。
 
 
-## キーボード (Sx1, Sx2)
+## キーボード
 
 キーが非常に少ない Brain のキーボードで必要な記号を打つため、キーボードの使用方法は特殊になっています。キートップに記載されたキー以外の文字は、すべて「記号」キーと「シフト」キーを組み合わせて入力します。
 
-Shift キー・Ctrl キー・Alt キーは現実のキーボードに近い配置として以下のように対応させています。
+Shift キー・Ctrl キー・Alt キーは現実のキーボードに近い配置で対応させています。古い機種は Space キーがないため「Sジャンプ」キーに割り当てています。
 
-- Shift → 「シフト」
-- Ctrl → ページアップキー（《 を横に倒した記号のキー）
-- Alt → 「文字切り替え」キー
+
+### Gxxxx, Axxxx の場合
+
+|特殊キー|対応するキー|備考|
+|:-:|:-:|:-:|
+|Shift|機能||
+|Ctrl|音声||
+|Alt|前見出||
+|Space|Sジャンプ||
+
+
+### Sx1 ~ Sx3, HC4 ~ HC6, SR1 の場合
+
+|特殊キー|対応するキー|備考|
+|:-:|:-:|:-:|
+|Shift|シフト||
+|Ctrl|ページアップ|`《` を横に倒した記号|
+|Alt|文字切り替え||
+
+
+### Sx4, H7700, SR2 の場合
+
+|特殊キー|対応するキー|備考|
+|:-:|:-:|:-:|
+|Shift|シフト||
+|Ctrl|音声||
+|Alt|ページアップ|`《` を横に倒した記号|
+
+
+### Sx5 ~ Sx7, H7800 ~ H9100, AAx, AJx, SR3 の場合
+
+|特殊キー|対応するキー|備考|
+|:-:|:-:|:-:|
+|Shift|シフト||
+|Ctrl|ページアップ|`《` を横に倒した記号|
+|Alt|音声||
+
+
+## キーマップ
 
 キーと入力される文字のマップを以下に示します。
 
