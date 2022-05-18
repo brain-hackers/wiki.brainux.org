@@ -17,7 +17,7 @@ excerpt: Brainux で利用可能な Web ブラウザについて
 
 ## NetSurf
 
-バージョン2022-05-17-020127にてWebブラウザにNetSurfが追加されました。以下のコマンドを実行すると NetSurf が起動します。
+バージョン2022-05-17-020127にてWebブラウザに NetSurf が追加されました。以下のコマンドを実行すると NetSurf が起動します。
 
 ```sh
 netsurf &
