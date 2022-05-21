@@ -82,4 +82,3 @@ Brainux では、debootstrap で生成した rootfs に加えて以下のパッ�
 |fcitx-anthy|
 |libpam0g-dev|
 |libxcb-xkb-dev|
-
