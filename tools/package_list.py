@@ -19,4 +19,6 @@ for (i,line) in enumerate(lines):
         found_packages.extend(packages)
         backslashed = line.endswith('\\')
 
-print('\n'.join(found_packages))
+print('|パッケージ名|')
+print('|:-|')
+print('\n'.join(f'|{p}|' for p in found_packages))
