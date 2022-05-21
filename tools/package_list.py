@@ -1,13 +1,15 @@
 import requests
 
 
-res = requests.get('https://raw.githubusercontent.com/brain-hackers/buildbrain/master/os-brainux/setup_brainux.sh')
+res = requests.get(
+    'https://raw.githubusercontent.com/brain-hackers/buildbrain/master/os-brainux/setup_brainux.sh'
+)
 lines = res.text.split('\n')
 
 found_packages = []
 backslashed = False
 
-for (i,line) in enumerate(lines):       
+for (i, line) in enumerate(lines):
     if line.strip().startswith('apt install') or backslashed:
         if backslashed:
             packages = line.strip().split(' ')
