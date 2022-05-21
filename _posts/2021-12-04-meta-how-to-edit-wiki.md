@@ -40,11 +40,11 @@ $ sudo gem install bundler
 $ bundle install
 ```
 
-ビルドとプレビューができることを確認します。下記のように `bundle exec jekyll serve` を実行すると localhost:4000 でサーバが
+ビルドとプレビューができることを確認します。下記のように `make serve` を実行すると localhost:4000 でサーバが
 起動している旨のメッセージが出るので、メッセージが見え次第ブラウザで `localhost:4000` を開いてプレビューできます。
 
 ```sh
-$ bundle exec jekyll serve
+$ make serve
 Configuration file: /Users/takumi/dev/brain/wiki.brainux.org/_config.yml
             Source: /Users/takumi/dev/brain/wiki.brainux.org
        Destination: /Users/takumi/dev/brain/wiki.brainux.org/_site
