@@ -40,11 +40,11 @@ $ sudo gem install bundler
 $ bundle install
 ```
 
-ビルドとプレビューができることを確認します。下記のように `bundle exec jekyll serve` を実行すると localhost:4000 でサーバが
+ビルドとプレビューができることを確認します。下記のように `make serve` を実行すると localhost:4000 でサーバが
 起動している旨のメッセージが出るので、メッセージが見え次第ブラウザで `localhost:4000` を開いてプレビューできます。
 
 ```sh
-$ bundle exec jekyll serve
+$ make serve
 Configuration file: /Users/takumi/dev/brain/wiki.brainux.org/_config.yml
             Source: /Users/takumi/dev/brain/wiki.brainux.org
        Destination: /Users/takumi/dev/brain/wiki.brainux.org/_site
@@ -314,3 +314,31 @@ Linter によるチェック: **なし**
 この節でいう明示的改行とは Hard line breaks のことで、空行による段落区切りや単一の LF による Soft line break ではなく確実に改行を入れることを指します。必要でない限りは使わないことが望ましいです。
 
 明示的な改行の入れ方には行末にスペース2つを入れる方法とバックスラッシュを入れる方法がありまず。前者は通常不可視な上に意味合いがわかりづらいため、バックスラッシュを使用します。
+
+
+# 一部ページの特殊な操作
+
+「パッケージ一覧」を更新する際は、Python スクリプトを利用します。
+
+まず、これを実行する場合は、以下のようにして依存関係をインストールします。
+
+```sh
+pip3 install -r ./tools/requirements.txt 
+```
+
+次に、テーブルを生成します。
+
+```sh
+python3 ./tools/package_list.py
+```
+
+また、出力した結果を以下のようにしてクリップボードに直接コピーすることもできます。
+
+
+```sh
+# Ubuntu 
+python3 ./tools/package_list.py | xsel -ib
+
+# macOS 
+python3 ./tools/package_list.py | pbcopy
+```
