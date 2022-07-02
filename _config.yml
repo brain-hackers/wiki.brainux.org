@@ -99,6 +99,18 @@ defaults:
       author_profile: false
       show_date: false
 
+  # Linux Package List (hide toc)
+  - scope:
+      path: "_posts/2021-12-04-linux-package-list.md"
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      comments: true
+      show_date: false
+      toc: false
+      toc_sticky: false
+
 category_archive:
   type: liquid
   path: /categories/
