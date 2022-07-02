@@ -4,6 +4,7 @@ categories:
   - Linux
 tags:
   - Linux
+toc: false
 ---
 
 Brainux では、debootstrap で生成した rootfs に加えて以下のパッケージをインストールしています。
