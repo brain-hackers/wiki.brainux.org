@@ -66,18 +66,14 @@ macOS もしくは Linux をお使いの場合は、ZIP を展開して取り出
 今回は macOS で balenaEtcher を使用した際の画像で説明します。どの OS でも同様にして書き込めます。
 
  1. balenaEtcher を起動します
-
  2. "Flash from file" をクリックし、ダウンロードした ZIP ファイルを選択します
-
     - 展開する必要はありません
 
     <img src="/assets/images/etcher1.png" width=300px>
 
     <img src="/assets/images/etcher2.png" width=300px>
 
-
  3. "Select target" をクリックして書き込み先を選択します
-
     - 正しい SD カードを選択しているか慎重に確認してください
     - 4GB 以上の SD カードであればなんでも使用可能です
     - SD カードの性能がシステムの使用感に直結するため高速な SD カードを使用することをお勧めします
@@ -88,7 +84,6 @@ macOS もしくは Linux をお使いの場合は、ZIP を展開して取り出
     <img src="/assets/images/etcher4.png" width=300px>
 
  4. "Flash!" をクリックして書き込みます
-
     - あらためて正しい SD カードが選択されているか確認したうえで書き込んでください
     - 書き込みには管理者権限が必要なため管理者パスワードを入力します
 
@@ -98,8 +93,7 @@ macOS もしくは Linux をお使いの場合は、ZIP を展開して取り出
 
     <img src="/assets/images/etcher7.png" width=300px>
 
- 5. 完成！
-
+ 5. 完成！\
     <img src="/assets/images/etcher8.png" width=300px>
 
 
