@@ -132,7 +132,7 @@ sudo dd if=~/Downloads/sdimage-2021-02-21-162410.img of=/dev/sdc bs=10M
 書き込み終わった SD カードを Brain に挿入して Linux を起動しましょう。起動には2つの方法があります。
 
 - アプリメニューからの起動
-- SDカードからの直接起動
+- SD カードからの直接起動
 
 
 ## アプリメニューからの起動
@@ -140,7 +140,7 @@ sudo dd if=~/Downloads/sdimage-2021-02-21-162410.img of=/dev/sdc bs=10M
 Windows CE 起動後に "Launch Linux" を追加アプリメニューで選択すると Linux が起動します。
 
 
-## SDカードからの直接起動
+## SD カードからの直接起動
 
 Windows CE の起動シーケンスに割り込み Linux を直接起動する方法です。後述の問題によりこの方法は標準で無効になっています。有効化するには、以下の手順に従ってください。
 
