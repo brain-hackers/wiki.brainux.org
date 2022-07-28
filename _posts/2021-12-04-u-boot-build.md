@@ -31,23 +31,23 @@ sudo apt install build-essential bison flex libncurses5-dev gcc-arm-linux-gnueab
 ```
 
 
-## Gitリポジトリのクローン
+## Git リポジトリのクローン
 
-Gitリポジトリをクローンして、必要なファイルをダウンロードします。長い時間がかかるので、時間のある時に実いましょう。
+Git リポジトリをクローンして、必要なファイルをダウンロードします。長い時間がかかるので、時間のある時に行いましょう。
 
 ```sh
 git clone --recursive https://github.com/brain-hackers/buildbrain.git
 ```
 
 
-# U-Bootのビルドとnk.binの作成
+# U-Boot のビルドと nk.bin の作成
 
 1. `cd buildbrain` で `buildbrain` ディレクトリに入ります
 
 2. `make udefconfig-sh*` を実行して、 `.config` ファイルを作成します
 
-    - PW-Sx1のとき： `make udefconfig-sh1`
-    - PW-Sx5のとき： `make udefconfig-sh5`
+    - PW-Sx1 のとき： `make udefconfig-sh1`
+    - PW-Sx5 のとき： `make udefconfig-sh5`
 
 3. `make ubuild` を実行して `u-boot.sb` を生成します
 
