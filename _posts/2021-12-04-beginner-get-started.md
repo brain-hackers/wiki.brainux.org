@@ -222,7 +222,9 @@ Brainux を正しく終了し電源を切るためには、次のコマンドを
 
 ```sh
 sudo shutdown -h now
-sudo poweroff  # こちらでも OK
+
+# こちらでも OK
+sudo poweroff
 ```
 
 また、電源ボタンには一般的な PC の電源ボタンと同じ動作が割り当てられているため、押すとシャットダウンできます。
