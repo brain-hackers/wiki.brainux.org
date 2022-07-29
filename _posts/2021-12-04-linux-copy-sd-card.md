@@ -36,7 +36,7 @@ sudo apt install gparted
 
 ## パーティションを作成する
 
-Linux をインストールする SD カード を PC に挿入して GParted を起動します。
+Linux をインストールする SD カードを PC に挿入して GParted を起動します。
 
 
 ### GParted の起動
