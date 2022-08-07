@@ -38,7 +38,7 @@ Linux ディストリビューションは、カーネルとそれ以外のソ�
 |PW-Sx1|:white_check_mark:|:white_check_mark:||
 |PW-Sx2|:white_check_mark:|:white_check_mark:||
 |PW-Sx3|:white_check_mark:|:white_check_mark:||
-|PW-Sx4|:white_check_mark:|                  ||
+|PW-Sx4|:white_check_mark:|:white_check_mark:||
 |PW-Sx5|:white_check_mark:|:white_check_mark:||
 |PW-Sx6|:white_check_mark:|:white_check_mark:||
 |PW-Sx7|:white_check_mark:|:white_check_mark:||
