@@ -38,7 +38,7 @@ Linux ディストリビューションは、カーネルとそれ以外のソ�
 |PW-Sx1|:white_check_mark:|:white_check_mark:||
 |PW-Sx2|:white_check_mark:|:white_check_mark:||
 |PW-Sx3|:white_check_mark:|:white_check_mark:||
-|PW-Sx4|:white_check_mark:|                  ||
+|PW-Sx4|:white_check_mark:|:white_check_mark:||
 |PW-Sx5|:white_check_mark:|:white_check_mark:||
 |PW-Sx6|:white_check_mark:|:white_check_mark:||
 |PW-Sx7|:white_check_mark:|:white_check_mark:||
@@ -215,9 +215,10 @@ Shift キー・Ctrl キー・Alt キーは現実のキーボードに近い配�
 
 <img src="/assets/images/keymap.png" width=640px>
 
+
 ## 電源を切る
 
-リセットボタンを利用して強制的に電源を切るなどの方法で、正常にシャットダウンしなかった場合、SD カード内のデータが破壊される場合があります。
+リセットボタンを利用して強制的に電源を切るなどの方法で、正常にシャットダウンしなかった場合、SD カード内のデータを破壊する場合があります。
 
 Brainux を正しく終了し電源を切るためには、次のコマンドを入力します。
 
@@ -231,3 +232,10 @@ sudo poweroff
 また、電源ボタンには一般的な PC の電源ボタンと同じ動作が割り当てられているため、押すとシャットダウンできます。
 
 シャットダウンした後、リセットボタンを押すと Windows CE を起動できます。
+
+
+# その他
+
+|Q|A|
+|:-|:-|
+|ファイルシステムを SD カードいっぱいまで拡張したい。|[brain-config](/linux/brain-config/) を使います。|
