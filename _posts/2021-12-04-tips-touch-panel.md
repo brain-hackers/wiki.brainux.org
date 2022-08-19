@@ -75,7 +75,7 @@ xinput_calibrator
 `/etc/X11/xorg.conf.d`を作成します。
 
 ```sh
-mkdir /etx/X11/xorg.conf/d
+mkdir /etx/X11/xorg.conf.d
 ```
 
 xinput_calibratorの出力に従って、`/etc/X11/xorg.conf.d/99-calibration.conf`に
