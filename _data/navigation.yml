@@ -1,6 +1,6 @@
 main:
   - title: "初めての方へ"
-    url: /for%20beginners/beginner-get-started/
+    url: /beginners/get-started/
   - title: "タグ一覧"
     url: /tags/
   - title: "この Wiki について"

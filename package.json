@@ -8,8 +8,8 @@
         "textlint-rule-prh": "^5.3.0"
     },
     "scripts": {
-        "textlint": "textlint '_posts/*'",
-        "textlint-fix": "textlint --fix '_posts/*'",
-        "mdlint": "./node_modules/markdownlint-cli/markdownlint.js _posts"
+        "textlint": "textlint 'collections/**/*'",
+        "textlint-fix": "textlint --fix 'collections/**/*'",
+        "mdlint": "./node_modules/markdownlint-cli/markdownlint.js collections/**/*"
     }
 }
