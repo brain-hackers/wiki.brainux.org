@@ -1,7 +1,5 @@
 ---
 title: OTG ケーブル
-categories:
-  - Tips
 tags:
   - 周辺機器
   - USB

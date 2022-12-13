@@ -1,8 +1,5 @@
 ---
 title: ハードウェア対応状況とロードマップ
-categories:
-  - Linux
-  - U-Boot
 tags:
   - Linux
   - U-Boot

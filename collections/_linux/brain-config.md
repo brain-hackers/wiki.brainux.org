@@ -1,7 +1,5 @@
 ---
 title: brain-config
-categories:
-  - Linux
 tags:
   - Linux
 ---

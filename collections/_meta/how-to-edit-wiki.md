@@ -1,7 +1,5 @@
 ---
 title: Wiki の編集方法とルール
-categories:
-  - Meta
 tags:
   - Wiki
   - メンバー向け

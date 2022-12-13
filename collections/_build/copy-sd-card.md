@@ -1,7 +1,5 @@
 ---
 title: SD カードへのコピー
-categories:
-  - Linux
 tags:
   - Linux
   - 自力ビルド

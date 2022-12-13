@@ -1,7 +1,5 @@
 ---
 title: 初めての方へ ─ とりあえず動かす
-categories:
-  - For Beginners
 tags:
   - For Beginners
   - 沼の入り口

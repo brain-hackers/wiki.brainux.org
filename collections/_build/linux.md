@@ -1,7 +1,5 @@
 ---
 title: Linux のビルド 
-categories:
-  - Linux
 tags:
   - Linux
   - 自力ビルド

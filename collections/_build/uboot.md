@@ -1,7 +1,5 @@
 ---
 title: U-Boot のビルド
-categories:
-  - U-Boot
 tags:
   - U-Boot
   - 自力ビルド
