@@ -109,7 +109,7 @@ collections:
       - roadmap.md
   build:
     output: true
-    name: 手動ビルド
+    name: Build
     order:
       - uboot.md
       - linux.md
