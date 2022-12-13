@@ -4,18 +4,17 @@ layout: archive
 
 {{ content }}
 
-{% assign unique_tags = "" | split: "" %}
-{% assign nested_docs = site.collections | map: "docs" %}
-{% assign docs = "" | split: "" %}
+{% comment %} Flatten all documents in all categories {% endcomment %}
 
-{% for doc in nested_docs %}
-  {% assign docs = docs | concat: doc %}
+{% assign docs = "" | split: "" %}
+{% for collection in site.collections %}
+  {% assign docs = docs | concat: collection.docs %}
 {% endfor %}
 
-{% assign found_tags = docs | map: "tags" %}
+{% comment %} Extract all tags {% endcomment %}
 
-{% for tags in found_tags %}
-  {% assign all_tags = all_tags | concat: tags %}
+{% for doc in docs %}
+  {% assign all_tags = all_tags | concat: doc.tags %}
 {% endfor %}
 
 {% assign unique_tags = all_tags | uniq %}
@@ -26,6 +25,7 @@ layout: archive
 
 {% for tag in unique_tags %}
   {% comment %} Count the number of tag occurrence in all docs {% endcomment %}
+
   {% assign count = 0 %}
   {% for t in all_tags %}
     {% if t == tag %}
@@ -35,6 +35,7 @@ layout: archive
   {% assign tags_count = tags_count | push: count %}
 
   {% comment %} Group docs by tags {% endcomment %}
+
   {% assign found = docs | where_exp: "item", "item.tags contains tag" %}
   {% assign tagged_docs = tagged_docs | push: found %}
 
@@ -42,7 +43,6 @@ layout: archive
     {% assign tags_max = count %}
   {% endif %}
 {% endfor %}
-
 
 <ul class="taxonomy__index">
   {% for i in (1..tags_max) reversed %}

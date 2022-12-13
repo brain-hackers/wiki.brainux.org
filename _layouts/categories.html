@@ -19,6 +19,8 @@ layout: archive
   {% endfor %}
 </ul>
 
+{% comment %} Make sure that all collections are listed in the _config.yml. {% endcomment %}
+
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 {% for label in site.collections_order %}
   {% assign collection = site.collections | where: "label", label | first %}
