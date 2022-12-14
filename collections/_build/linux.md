@@ -1,7 +1,5 @@
 ---
 title: Linux のビルド 
-categories:
-  - Linux
 tags:
   - Linux
   - 自力ビルド
@@ -75,4 +73,4 @@ Linuxのカーネルの準備ができたら、カーネルの上で動くアプ
 +   52    apt install -y fbterm uim-fep uim-mozc
 ```
 
-[SD カードへのコピー](/linux/linux-copy-sd-card/)に続く…
+[SD カードへのコピー](/build/copy-sd-card/)に続く…

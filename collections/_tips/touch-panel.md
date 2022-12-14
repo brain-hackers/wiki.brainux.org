@@ -1,21 +1,11 @@
 ---
 title: タッチパネル
-categories:
-  - Tips
-  - Linux
 tags:
   - Linux
   - GUI
   - 周辺機器
 excerpt: タッチパネルのキャリブレーション（Brainux に同梱されているため手動インストールは不要）
 ---
-
-
-# 事前に
-
-Xorgの設定ファイル ( xorg.conf )を設定していない場合は、下記のWikiを参照して設定してください。  
-
-[Xorg](/linux/linux-xorg/)
 
 
 # 必要なパッケージのインストール

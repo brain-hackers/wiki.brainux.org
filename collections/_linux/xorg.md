@@ -1,7 +1,5 @@
 ---
 title: Xorg
-categories:
-  - Linux
 tags:
   - Linux
   - GUI

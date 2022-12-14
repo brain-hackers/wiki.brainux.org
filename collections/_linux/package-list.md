@@ -1,7 +1,5 @@
 ---
 title: パッケージ一覧
-categories:
-  - Linux
 tags:
   - Linux
 toc: false

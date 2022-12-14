@@ -1,8 +1,5 @@
 ---
 title: Web ブラウザ
-categories:
-  - Tips
-  - Linux
 tags:
   - Linux
   - GUI

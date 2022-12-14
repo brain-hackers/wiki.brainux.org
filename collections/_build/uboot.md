@@ -1,7 +1,5 @@
 ---
 title: U-Boot のビルド
-categories:
-  - U-Boot
 tags:
   - U-Boot
   - 自力ビルド
@@ -56,4 +54,4 @@ git clone --recursive https://github.com/brain-hackers/buildbrain.git
 5. `make nk.bin` を実行します
 
 
-[Linux のビルド](/linux/linux-build/)に続く…
+[Linux のビルド](/build/linux/)に続く…

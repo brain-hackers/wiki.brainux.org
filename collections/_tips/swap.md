@@ -1,8 +1,5 @@
 ---
 title: Swap 領域
-categories:
-  - Tips
-  - Linux
 tags:
   - Linux
 excerpt: ""
