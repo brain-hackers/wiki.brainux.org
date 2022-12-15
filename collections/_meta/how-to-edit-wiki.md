@@ -88,6 +88,12 @@ markdownlint を動かして、正常に lint されるか試します。
 $ npm run mdlint
 ```
 
+また、Brain Hackers Wiki では Markdown の書式を統一するために、[EditorConfig](https://editorconfig.org) を使用しています。
+
+[Vim](https://github.com/editorconfig/editorconfig-vim#readme) や [Emacs](https://github.com/editorconfig/editorconfig-emacs#readme), [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) など一部のエディタでは、設定を適用するためにプラグインをインストールする必要があります。
+
+お使いのエディタの対応状況は、[EditorConfig 公式ページ](https://editorconfig.org)をご確認ください。
+
 
 # 各種操作
 
