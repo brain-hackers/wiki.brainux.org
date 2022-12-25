@@ -88,9 +88,9 @@ markdownlint を動かして、正常に lint されるか試します。
 $ npm run mdlint
 ```
 
-さらに、Brain Hackers Wiki では、[EditorConfig](https://editorconfig.org) を利用しています。
+当 Wiki では、[EditorConfig](https://editorconfig.org) を導入しています。
 
-該当するファイル (HTML) を編集する場合は、EditorConfig を導入し、既存のインデントなどのルールに沿って、ドキュメントを編集してください。
+お使いのエディタにEditorConfig を導入し、既存のインデントに沿ってドキュメントを編集してください。
 
 
 # 各種操作
