@@ -88,6 +88,10 @@ markdownlint を動かして、正常に lint されるか試します。
 $ npm run mdlint
 ```
 
+当 Wiki では、[EditorConfig](https://editorconfig.org) を導入しています。
+
+お使いのエディタにEditorConfig を導入し、既存のインデントに沿ってドキュメントを編集してください。
+
 
 # 各種操作
 
