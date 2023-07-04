@@ -34,5 +34,5 @@ $ sudo brain-config
 
 1. "Interface Options" を選択します
 2. "USB Switch the role of the USB Host Controller" を選択します
-3. USBホストにしたい場合は "host" を、USB Gadgetにしたい場合は "peripheral" を選択します
-4. トップメニューに戻っているため "Finish" を選択すると再起動が促されるため再起動します
+3. USB ホストにしたい場合は "host" を、USB Gadget にしたい場合は "peripheral" を選択します
+4. トップメニューの "Finish" を選択、再起動します
