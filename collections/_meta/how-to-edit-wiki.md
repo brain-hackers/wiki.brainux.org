@@ -101,7 +101,7 @@ $ npm run mdlint
 - master ブランチを pull して最新の本文を取得します
 - 新たにブランチを作成します
   - 後で Pull Request として提出するため、`master` ブランチには直接コミットしないでください
-- `_posts` ディレクトリにあるほかのファイルを参考にして md ファイルを追加します
+- `collections` ディレクトリにあるほかのファイルを参考にして md ファイルを追加します
   - 例: `2038-1-19-doomsday.md`
 - 記事内容を記述します
 - `npm run textlint` と `npm run mdlint` を実行し、エラーが出ないことを確認します
