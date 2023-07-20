@@ -14,8 +14,8 @@ excerpt: ""
 
 # 前提
 
-- [U-Boot のビルド](/u-boot/u-boot-build/)にてU-Bootをビルドしていること
-- [Linux のビルド](/linux/linux-build/)にてLinuxをビルドしていること
+- [U-Boot のビルド](/build/uboot/)にてU-Bootをビルドしていること
+- [Linux のビルド](/build/linux/)にてLinuxをビルドしていること
 
 
 # パーティションを区切る
