@@ -60,19 +60,22 @@ excerpt: PC と USB ケーブル1本で接続できる便利な仕組みとそ�
    書き換え後は以下のようになります。
 
    ```diff
-   ahb@80080000 {
-           usb0: usb@80080000 {
-                   pinctrl-names = "default";
-                   pinctrl-0 = <&usb0_id_pins_a>;
-                   vbus-supply = <&reg_usb0_vbus>;
-   -               dr_mode = "host";
-   +               dr_mode = "peripheral";
-                   status = "okay";
-           };
+   usb@80080000 {
+           compatible = "fsl,imx28-usb\0fsl,imx27-usb";
+           reg = < 0x80080000 0x10000 >;
+           interrupts = < 0x5d >;
+           clocks = < 0x03 0x3c >;
+           fsl,usbphy = < 0x1f >;
+           status = "okay";
+           pinctrl-names = "default";
+           pinctrl-0 = < 0x20 >;
+           vbus-supply = < 0x21 >;
+   -       dr_mode = "host";
+   +       dr_mode = "peripheral";
    };
    ```
 
-   書き換えられたら保存してエディタを終了します。`Ctrl+O`の次に`Enter`を押して保存して、`Ctrl+X`で終了します。
+   書き換えたら保存してエディタを終了します。`Ctrl+O`の次に`Enter`を押して保存して、`Ctrl+X`で終了します。
 
 5. 編集したものをバイナリ形式に変換します
 
@@ -156,7 +159,7 @@ sudo reboot
    次回起動時からはこのスクリプトを都度実行します。
 
    ```sh
-   ./gadget.sh
+   sudo ./gadget.sh
    ```
 
 
