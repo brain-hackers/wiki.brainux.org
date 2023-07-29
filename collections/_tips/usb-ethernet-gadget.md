@@ -21,11 +21,15 @@ excerpt: PC と USB ケーブル1本で接続できる便利な仕組みとそ�
 # USB コントローラの動作モードを変更する
 
 初期状態では Brain の USB コントローラはホストとして動作するため、このままではデバイスになることができません。
-コントローラの動作モードを切り替えるには brain-config というツールを使います。
-詳しい使い方は[brain-config](/linux/brain-config)のページで確認してください。
+コントローラの動作モードを切り替える方法には、brain-config というツールを使う方法と手動でデバイスツリーを書き換える方法があります。
 
 
-# 手動での変更
+## 方法A. brain-config で変更する
+
+`brain-config` による動作モードの切り替え方法については [brain-config](/linux/brain-config) のページを参照してください。
+
+
+## 方法B. 手動で変更する
 
 手動で変更するには、以下の手順に従ってください。
 
@@ -37,16 +41,16 @@ excerpt: PC と USB ケーブル1本で接続できる便利な仕組みとそ�
 
 2. 元のdtsをバックアップします
 
-   {機種名の数字}は適宜置き換えてください。（例:PW-SH5→imx28-pwsh5.dtb）
+   `{デバイスツリー名}`の箇所は、[対応機種の表](/beginners/get-started/#対応している機種)でお使いの機種を探して、対応する「デバイスツリー名」列の文字列で置き換えてください。（例:PW-SH5→imx28-pwsh5.dtb）
 
    ```sh
-   sudo cp /boot/imx28-pwsh{機種名の数字}.dtb /boot/imx28-pwsh{機種名の数字}.dtb.orig
+   sudo cp /boot/{デバイスツリー名}.dtb /boot/{デバイスツリー名}.dtb.orig
    ```
 
 3. dtbファイルをテキスト形式に変換します
 
    ```sh
-   dtc -I dtb -O dts /boot/imx28-pwsh{機種名の数字}.dtb > dts 2> /dev/null
+   dtc -I dtb -O dts /boot/{デバイスツリー名}.dtb > dts 2> /dev/null
    ```
 
 4. 設定を書き換えます
@@ -84,7 +88,7 @@ excerpt: PC と USB ケーブル1本で接続できる便利な仕組みとそ�
    ```
 
    ```sh
-   sudo mv dtb /boot/imx28-pwsh{機種名の数字}.dtb
+   sudo mv dtb /boot/{デバイスツリー名}.dtb
    ```
 
 6. SDカードの第1パーティションアンマウントします
@@ -99,28 +103,28 @@ excerpt: PC と USB ケーブル1本で接続できる便利な仕組みとそ�
    sudo reboot
    ```
 
-
-## コピペ用
-
 1〜3の手順をまとめると以下のようになります。
 
 ```sh
 sudo mount /dev/mmcblk1p1 /boot
-sudo cp /boot/imx28-pwsh{機種名の数字}.dtb /boot/imx28-pwsh{機種名の数字}.dtb.orig
-dtc -I dtb -O dts /boot/imx28-pwsh{機種名の数字}.dtb > dts 2> /dev/null
+sudo cp /boot/{デバイスツリー名}.dtb /boot/{デバイスツリー名}.dtb.orig
+dtc -I dtb -O dts /boot/{デバイスツリー名}.dtb > dts 2> /dev/null
 ```
 
 5〜7の手順をまとめると以下のようになります。
 
 ```sh
 dtc -I dts -O dtb dts > dtb 2> /dev/null
-sudo mv dtb /boot/imx28-pwsh{機種名の数字}.dtb
+sudo mv dtb /boot/{デバイスツリー名}.dtb
 sudo umount /boot
 sudo reboot
 ```
 
 
 # Brain に Ethernet Gadget を喋らせる
+
+sysfs のファイル操作により Ethernet Gadget を有効化します。
+Brainux バージョン 2023-07-29-024604 以降では有効化処理が起動時に自動で実行されます。もし手動で有効化したい場合は以下の手順を参照してください。
 
 1. 以下のスクリプトを vi や nano でホームディレクトリに保存します
 
