@@ -27,18 +27,18 @@ Linux ディストリビューションは、カーネルとそれ以外のソ�
 
 内蔵ハードウェアの対応状況や使い方については[内蔵ハードウェア](#内蔵ハードウェア)をご覧ください。キーマップもそちらに掲載しています。
 
-|機種  |Linux 起動        |キーボード        |DTBファイル名|
+|機種  |Linux 起動        |キーボード        |デバイスツリー名|
 |:-----|:----------------:|:----------------:|:---|
 |PW-ACxxx, GCxxx, TC980||||
 |PW-G4000, G5000, G5100, A7000, A9000||||
-|PW-G4200, G5200 ~ 5300, A7200 ~ 7400, A9100 ~ 9300, GX500, GX300|:white_check_mark:|:white_check_mark:|imx28-pwa7200.dtb|
-|PW-Sx1, HC4, SR1|:white_check_mark:|:white_check_mark:|imx28-pwsh1.dtb|
-|PW-Sx2, HC5|:white_check_mark:|:white_check_mark:|imx28-pwsh2.dtb|
-|PW-Sx3, HC6|:white_check_mark:|:white_check_mark:|imx28-pwsh3.dtb|
-|PW-Sx4, H7700, SR2|:white_check_mark:|:white_check_mark:|imx28-pwsh4.dtb|
-|PW-Sx5, H7800, AA1, AJ1|:white_check_mark:|:white_check_mark:|imx28-pwsh5.dtb|
-|PW-Sx6, H8000, AA2, AJ2|:white_check_mark:|:white_check_mark:|imx28-pwsh6.dtb|
-|PW-Sx7, H8100, H9100, SR3|:white_check_mark:|:white_check_mark:|imx28-pwsh7.dtb|
+|PW-G4200, G5200 ~ 5300, A7200 ~ 7400, A9100 ~ 9300, GX500, GX300|:white_check_mark:|:white_check_mark:|imx28-pwa7200|
+|PW-Sx1, HC4, SR1|:white_check_mark:|:white_check_mark:|imx28-pwsh1|
+|PW-Sx2, HC5|:white_check_mark:|:white_check_mark:|imx28-pwsh2|
+|PW-Sx3, HC6|:white_check_mark:|:white_check_mark:|imx28-pwsh3|
+|PW-Sx4, H7700, SR2|:white_check_mark:|:white_check_mark:|imx28-pwsh4|
+|PW-Sx5, H7800, AA1, AJ1|:white_check_mark:|:white_check_mark:|imx28-pwsh5|
+|PW-Sx6, H8000, AA2, AJ2|:white_check_mark:|:white_check_mark:|imx28-pwsh6|
+|PW-Sx7, H8100, H9100, SR3|:white_check_mark:|:white_check_mark:|imx28-pwsh7|
 |PW-x1, x2, ESxxxx, SR4||||
 
 
