@@ -180,30 +180,73 @@ Windows / Mac / Linux すべてで利用可能です。
    「ほかのデバイス」グループの「RNDIS」が Brain に当たります。
 
 3. 「RNDIS」を右クリックしてコンテキストメニューを表示し、「ドライバーの更新」を選択します
+
    <img src="/assets/images/ether-win1.png" width=300px>
 
 4. 「ドライバーの検索方法」ダイアログで、「コンピューターを参照してドライバを検索」を選択します
+
    <img src="/assets/images/ether-win2.png" width=300px>
 
 5. 「共通ハードウェアの種類」から、「ネットワーク アダプター」を選択します
+
    <img src="/assets/images/ether-win3.png" width=300px>
 
 6. 製造元は「Microsoft」を選び、モデルに「リモート NDIS 互換デバイス」を選択します。「次へ」を選択するとドライバのインストールが始まるので、以降は画面上の指示に従います
+
    <img src="/assets/images/ether-win4.png" width=300px>
 
 7. 「ネットワーク接続」からアダプターの設定を変更します
 
-- 設定から「ネットワークとインターネット」を開き、「ネットワークの詳細設定」グループにある「アダプターのオプションを変更する」を選択します (Windows 10)
-   <img src="/assets/images/ether-win5.png" width=300px>
+   - 設定から「ネットワークとインターネット」を開き、「ネットワークの詳細設定」グループにある「アダプターのオプションを変更する」を選択します (Windows 10)
 
-- 設定から「ネットワークとインターネット」を開き、「ネットワークの詳細設定」を選択し、「ネットワーク アダプター オプションの詳細」を選択します (Windows 11)
-   <img src="/assets/images/ether-win6.png" width=300px>
-   <img src="/assets/images/ether-win7.png" width=300px>
+      <img src="/assets/images/ether-win5.png" width=300px>
+
+   - 設定から「ネットワークとインターネット」を開き、「ネットワークの詳細設定」を選択し、「ネットワーク アダプター オプションの詳細」を選択します (Windows 11)
+
+      <img src="/assets/images/ether-win6.png" width=300px>
+
+      <img src="/assets/images/ether-win7.png" width=300px>
 
 8. Windows がインターネットの接続に使用しているアダプタ（Wi-Fi / イーサネット）を選択し「プロパティ」を開きます
+
    <img src="/assets/images/ether-win8.png" width=300px>
 
 9. 「共有」タブから「ネットワークのほかのユーザーに、このコンピューターのインターネット接続を通しての接続を許可する」を選択し、「ホーム ネットワーク接続」プルダウンメニューで、Ethernet Gadget に対応するアダプタを選択します
+
    <img src="/assets/images/ether-win9.png" width=300px>
 
-10. USB ケーブルで Windows と Brain を接続し、Gadget を起動すれば、 "USB Composite Device" が認識します。この状態で Brain から Windows に `ping` などで接続できるか確認してください。
+10. USB ケーブルで Windows と Brain を接続し、Gadget を起動すれば、 "USB Composite Device" が認識します。この状態で Brain から Windows に `ping` などで接続できるか確認してください
+
+## macOS の設定
+
+**注意**: 以下に記載する方法を行うには、OS X El Capitan 以降では、Mac の システム整合性保護を解除する必要があります。システム整合性保護は、Mac 状の保護されたファイルを改ざんしようとする悪質なソフトウェアからデータを守るセキュリティ技術です。詳しくは、[Mac のシステム整合性保護について - Apple サポート](https://support.apple.com/ja-jp/HT204899) などを参照し、十分に理解してから実行してください。{: .notice--danger}
+
+1. macOS をリカバリモードで起動します
+
+- 機種によって、起動時に `cmd`+`R` を長押しする方法と、Touch ID を長押しする場合があります。
+
+2. `Options` を選択し、メニューバーのユーティリティからターミナルを開き、以下を実行します。
+
+```sh
+csrutil enable --without kext
+reboot
+```
+自動で、再起動します。
+
+3. 通常通り起動します。
+
+4. ターミナルから、以下の手順でビルドします。なお、ビルドには XCode がインストールされている必要があります。El Capitan 以前のバージョンでは、この手順をスキップして `brew` を用いてインストールすることもできます。その場合、手順6 に進んでください
+
+```sh
+git clone https://github.com/thpryrchn/HoRNDIS.git -b BigSur
+cd HoRNDIS
+make
+```
+
+5. `build/pkg` に `HoRNDIS-kext.pkg` が作成されているので、ダブルクリックして、指示に従いインストールします
+
+6. 上記「USB コントローラの動作モードを変更する」が適用された Brain を接続すると、インターネット共有できます
+
+## Linux の設定
+
+工事中
