@@ -169,7 +169,41 @@ Brainux バージョン 2023-07-29-024604 以降では有効化処理が起動�
 
 # PC側の対応作業
 
-Windows / Mac / Linux すべてで利用可能です。（注: 2021年2月23日現在、上記スクリプトでは Windows と macOS で認識しないことを確認しており、修正予定です）
+Windows / Mac / Linux すべてで利用可能です。
 
-PCを通してインターネットへ出るために、ネットワーク接続の共有設定が必要になります。OS ごとに設定方法は異なりますので、別途設定してください。
+## Windows 10 / 11 の設定
 
+1. 上記「USB コントローラの動作モードを変更する」を参照して、動作モードを Peripheral に変更します
+
+2. Windows と Brain を USB ケーブルで接続し、デバイスマネージャで認識されていることを確認します
+
+   「ほかのデバイス」グループの「RNDIS」が Brain に当たります。
+
+3. 「RNDIS」を右クリックしてコンテキストメニューを表示し、「ドライバーの更新」を選択します
+   <img src="/assets/images/ether-win1.png" width=300px>
+
+4. 「ドライバーの検索方法」ダイアログで、「コンピューターを参照してドライバを検索」を選択します
+   <img src="/assets/images/ether-win2.png" width=300px>
+
+5. 「共通ハードウェアの種類」から、「ネットワーク アダプター」を選択します
+   <img src="/assets/images/ether-win3.png" width=300px>
+
+6. 製造元は「Microsoft」を選び、モデルに「リモート NDIS 互換デバイス」を選択します。「次へ」を選択するとドライバのインストールが始まるので、以降は画面上の指示に従います
+   <img src="/assets/images/ether-win4.png" width=300px>
+
+7. 「ネットワーク接続」からアダプターの設定を変更します
+
+- 設定から「ネットワークとインターネット」を開き、「ネットワークの詳細設定」グループにある「アダプターのオプションを変更する」を選択します (Windows 10)
+   <img src="/assets/images/ether-win5.png" width=300px>
+
+- 設定から「ネットワークとインターネット」を開き、「ネットワークの詳細設定」を選択し、「ネットワーク アダプター オプションの詳細」を選択します (Windows 11)
+   <img src="/assets/images/ether-win6.png" width=300px>
+   <img src="/assets/images/ether-win7.png" width=300px>
+
+8. Windows がインターネットの接続に使用しているアダプタ（Wi-Fi / イーサネット）を選択し「プロパティ」を開きます
+   <img src="/assets/images/ether-win8.png" width=300px>
+
+9. 「共有」タブから「ネットワークのほかのユーザーに、このコンピューターのインターネット接続を通しての接続を許可する」を選択し、「ホーム ネットワーク接続」プルダウンメニューで、Ethernet Gadget に対応するアダプタを選択します
+   <img src="/assets/images/ether-win9.png" width=300px>
+
+10. USB ケーブルで Windows と Brain を接続し、Gadget を起動すれば、 "USB Composite Device" が認識します。この状態で Brain から Windows に `ping` などで接続できるか確認してください。
