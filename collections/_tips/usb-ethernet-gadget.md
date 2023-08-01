@@ -259,8 +259,12 @@ Windows / Mac / Linux すべてで利用可能です。
 
 2. トップバーのシステムメニューに、「USB Ethernet」 もしくは 「Ethernet」 という名前で接続されています。「USB Ethernet」 もしくは、「Ethernet」 をクリックし、「Wired Settings」 を選択します
 
-   <img src="/assets/images/ether-win9.png" width=300px>
+   <img src="/assets/images/ether-linux1.png" width=300px>
 
 3. 歯車のアイコンをクリックします
 
+   <img src="/assets/images/ether-linux2.png" width=300px>
+
 4. 「IPv4」タブにある「Shared to other computers」を選択します
+
+   <img src="/assets/images/ether-linux3.png" width=300px>
