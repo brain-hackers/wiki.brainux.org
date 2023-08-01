@@ -221,29 +221,30 @@ Windows / Mac / Linux すべてで利用可能です。
 
 ## macOS の設定
 
-**注意**: 以下に記載する方法を行うには、El Capitan 以降では、Mac の システム整合性保護を解除する必要があります。システム整合性保護は、Mac 上の保護されたファイルを改ざんしようとする悪質なソフトウェアからデータを守るセキュリティ技術です。詳しくは、[Mac のシステム整合性保護について - Apple サポート](https://support.apple.com/ja-jp/HT204899) などを参照し、十分に理解してから実行してください。{: .notice--danger}
+**注意**: 以下に記載する方法を行うには、El Capitan 以降では、Mac の システム整合性保護を解除する必要があります。システム整合性保護は、Mac 上の保護されたファイルを改ざんしようとする悪質なソフトウェアからデータを守るセキュリティ技術です。詳しくは、[Mac のシステム整合性保護について - Apple サポート](https://support.apple.com/ja-jp/HT204899) などを参照し、十分に理解してから実行してください。
+{: .notice--warning}
 
 1. macOS をリカバリモードで起動します
 
-- 機種によって、起動時に `cmd`+`R` を長押しする方法と、Touch ID を長押しする場合があります。
+    - 機種によって、起動時に `cmd`+`R` を長押しする方法と、Touch ID を長押しする場合があります。
 
 2. `Options` を選択し、メニューバーのユーティリティからターミナルを開き、以下を実行します。
 
-```sh
-csrutil enable --without kext
-reboot
-```
-自動で、再起動します。
+    ```sh
+    csrutil enable --without kext
+    reboot
+    ```
+    自動で、再起動します。
 
 3. 通常通り起動します。
 
 4. ターミナルから、以下の手順でビルドします。なお、ビルドには Xcode がインストールされている必要があります。El Capitan 以前のバージョンでは、この手順をスキップして `brew` を用いてインストールすることもできます。その場合、手順6 に進んでください
 
-```sh
-git clone https://github.com/thpryrchn/HoRNDIS.git -b BigSur
-cd HoRNDIS
-make
-```
+    ```sh
+    git clone https://github.com/thpryrchn/HoRNDIS.git -b BigSur
+    cd HoRNDIS
+    make
+    ```
 
 5. `build/pkg` に `HoRNDIS-kext.pkg` が作成されているので、ダブルクリックして、指示に従いインストールします
 
