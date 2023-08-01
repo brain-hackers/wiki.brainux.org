@@ -219,7 +219,7 @@ Windows / Mac / Linux すべてで利用可能です。
 
 ## macOS の設定
 
-**注意**: 以下に記載する方法を行うには、OS X El Capitan 以降では、Mac の システム整合性保護を解除する必要があります。システム整合性保護は、Mac 状の保護されたファイルを改ざんしようとする悪質なソフトウェアからデータを守るセキュリティ技術です。詳しくは、[Mac のシステム整合性保護について - Apple サポート](https://support.apple.com/ja-jp/HT204899) などを参照し、十分に理解してから実行してください。{: .notice--danger}
+**注意**: 以下に記載する方法を行うには、OS X El Capitan 以降では、Mac の システム整合性保護を解除する必要があります。システム整合性保護は、Mac 上の保護されたファイルを改ざんしようとする悪質なソフトウェアからデータを守るセキュリティ技術です。詳しくは、[Mac のシステム整合性保護について - Apple サポート](https://support.apple.com/ja-jp/HT204899) などを参照し、十分に理解してから実行してください。{: .notice--danger}
 
 1. macOS をリカバリモードで起動します
 
@@ -245,8 +245,18 @@ make
 
 5. `build/pkg` に `HoRNDIS-kext.pkg` が作成されているので、ダブルクリックして、指示に従いインストールします
 
-6. 上記「USB コントローラの動作モードを変更する」が適用された Brain を接続すると、インターネット共有できます
+6. 上記「USB コントローラの動作モードを変更する」が適用された Brain を接続します
 
 ## Linux の設定
 
-工事中
+※スクリーンショットは Ubuntu の例です。
+
+1. 上記「USB コントローラの動作モードを変更する」を参照して、動作モードを Peripheral に変更したデバイスを、Linux に接続します
+
+2. トップバーのシステムメニューに、「USB Ethernet」 もしくは 「Ethernet」 という名前で接続されています。「USB Ethernet」 もしくは、「Ethernet」 をクリックし、「Wired Settings」 を選択します
+
+    <img src="/assets/images/ether-win9.png" width=300px>
+
+3. 歯車のアイコンをクリックします
+
+4. 「IPv4」タブにある「Shared to other computers」を選択します
