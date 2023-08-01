@@ -171,13 +171,14 @@ Brainux バージョン 2023-07-29-024604 以降では有効化処理が起動�
 
 Windows / Mac / Linux すべてで利用可能です。
 
+
 ## Windows 10 / 11 の設定
 
 1. 上記「USB コントローラの動作モードを変更する」を参照して、動作モードを Peripheral に変更します
 
-2. Windows と Brain を USB ケーブルで接続し、デバイスマネージャで認識されていることを確認します
+2. Windows と Brain を USB ケーブルで接続し、「デバイス マネージャー」で認識されていることを確認します
 
-   「ほかのデバイス」グループの「RNDIS」が Brain に当たります。
+   「ほかのデバイス」グループの「RNDIS」が Brain にあたります。
 
 3. 「RNDIS」を右クリックしてコンテキストメニューを表示し、「ドライバーの更新」を選択します
 
@@ -217,9 +218,10 @@ Windows / Mac / Linux すべてで利用可能です。
 
 10. USB ケーブルで Windows と Brain を接続し、Gadget を起動すれば、 "USB Composite Device" が認識します。この状態で Brain から Windows に `ping` などで接続できるか確認してください
 
+
 ## macOS の設定
 
-**注意**: 以下に記載する方法を行うには、OS X El Capitan 以降では、Mac の システム整合性保護を解除する必要があります。システム整合性保護は、Mac 上の保護されたファイルを改ざんしようとする悪質なソフトウェアからデータを守るセキュリティ技術です。詳しくは、[Mac のシステム整合性保護について - Apple サポート](https://support.apple.com/ja-jp/HT204899) などを参照し、十分に理解してから実行してください。{: .notice--danger}
+**注意**: 以下に記載する方法を行うには、El Capitan 以降では、Mac の システム整合性保護を解除する必要があります。システム整合性保護は、Mac 上の保護されたファイルを改ざんしようとする悪質なソフトウェアからデータを守るセキュリティ技術です。詳しくは、[Mac のシステム整合性保護について - Apple サポート](https://support.apple.com/ja-jp/HT204899) などを参照し、十分に理解してから実行してください。{: .notice--danger}
 
 1. macOS をリカバリモードで起動します
 
@@ -235,7 +237,7 @@ reboot
 
 3. 通常通り起動します。
 
-4. ターミナルから、以下の手順でビルドします。なお、ビルドには XCode がインストールされている必要があります。El Capitan 以前のバージョンでは、この手順をスキップして `brew` を用いてインストールすることもできます。その場合、手順6 に進んでください
+4. ターミナルから、以下の手順でビルドします。なお、ビルドには Xcode がインストールされている必要があります。El Capitan 以前のバージョンでは、この手順をスキップして `brew` を用いてインストールすることもできます。その場合、手順6 に進んでください
 
 ```sh
 git clone https://github.com/thpryrchn/HoRNDIS.git -b BigSur
@@ -247,6 +249,7 @@ make
 
 6. 上記「USB コントローラの動作モードを変更する」が適用された Brain を接続します
 
+
 ## Linux の設定
 
 ※スクリーンショットは Ubuntu の例です。
@@ -255,7 +258,7 @@ make
 
 2. トップバーのシステムメニューに、「USB Ethernet」 もしくは 「Ethernet」 という名前で接続されています。「USB Ethernet」 もしくは、「Ethernet」 をクリックし、「Wired Settings」 を選択します
 
-    <img src="/assets/images/ether-win9.png" width=300px>
+   <img src="/assets/images/ether-win9.png" width=300px>
 
 3. 歯車のアイコンをクリックします
 
