@@ -221,7 +221,7 @@ Windows / macOS / Linux すべてで利用可能です。
 
    <img src="/assets/images/ether-win9.png" width=300px>
 
-11. Brain からインターネットへの疎通を確認します
+10. Brain からインターネットへの疎通を確認します
 
    Brain からインターネットに `ping` などで到達できるか確認してください。
 
@@ -274,20 +274,20 @@ Windows / macOS / Linux すべてで利用可能です。
 
 1. USB コントローラの動作モードが `peripheral` に変更された Brain を PC に接続して Gadget を有効化します
 
-3. Ethernet Gadget のネットワーク設定を開きます
+2. Ethernet Gadget のネットワーク設定を開きます
 
    Ethernet Gadget が認識されていると、トップバー右のシステムメニューに「USB Ethernet」 もしくは 「Ethernet」 という名前の項目で列挙されます。その項目をクリックし、「Wired Settings」 をクリックします。
 
    <img src="/assets/images/ether-linux1.png" width=300px>
 
-5. 歯車のアイコンをクリックします
+3. 歯車のアイコンをクリックします
 
    <img src="/assets/images/ether-linux2.png" width=300px>
 
-6. 「IPv4」タブにある「Shared to other computers」を選択します
+4. 「IPv4」タブにある「Shared to other computers」を選択します
 
    <img src="/assets/images/ether-linux3.png" width=300px>
 
-7. Brain からインターネットへの疎通を確認します
+5. Brain からインターネットへの疎通を確認します
 
    Brain からインターネットに `ping` などで到達できるか確認してください。
