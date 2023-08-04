@@ -228,39 +228,45 @@ Windows / macOS / Linux すべてで利用可能です。
 
 ## macOS の設定
 
-**注意**: 以下に記載する方法を行うには、El Capitan 以降では、Mac の システム整合性保護を解除する必要があります。システム整合性保護は、Mac 上の保護されたファイルを改ざんしようとする悪質なソフトウェアからデータを守るセキュリティ技術です。詳しくは、[Mac のシステム整合性保護について - Apple サポート](https://support.apple.com/ja-jp/HT204899) などを参照し、十分に理解してから実行してください。
+**注意**: 以下に記載する方法で Brain を接続する場合、macOS の システム整合性保護 (SIP) を解除する必要があります。システム整合性保護は、Mac 上の保護されたファイルを改ざんしようとする悪質なソフトウェアからデータを守るセキュリティ技術です。詳しくは、[Mac のシステム整合性保護について - Apple サポート](https://support.apple.com/ja-jp/HT204899) などを参照し、十分に理解してから実行してください。
 {: .notice--warning}
 
-1. macOS をリカバリモードで起動します
+1. macOS でカーネル拡張機能 (kext) を利用可能にします
 
-2. SIP を無効化します
+   2023年8月現在 Apple がサポートしている macOS では、kext の読み込みを有効化するために特別な設定が必要です。主な設定内容は以下の通りですが、詳細は macOS のバージョンにより異なるため、お使いの macOS に合わせた手順を検索して設定してください。
 
-   `Options` を選択し、メニューバーのユーティリティからターミナルを開き、以下を実行します。
+   - csrutil による SIP の無効化
+   - システム拡張機能のユーザーによる管理の許可
+   - システム設定におけるシステム拡張機能の許可
 
-    ```sh
-    csrutil enable --without kext
-    reboot
-    ```
-    Mac が自動で再起動します。
+2. HoRNDIS をビルドします
 
-3. Mac を通常の手順で起動します
+   ビルドに必要な Git や Xcode を事前に適宜インストールしてください。Xcode の初回起動では以下のコマンドが必要な場合があります。
 
-4. HoRNDIS をビルドします
+   ```sh
+   xcodebuild -license
+   xcodebuild -runFirstLaunch
+   ```
 
-   ターミナルから、以下の手順でビルドします。ビルドに必要な Git や Xcode を事前に適宜インストールしてください。
+   ターミナルを使って、以下の手順でビルドします。
 
-    ```sh
-    git clone https://github.com/thpryrchn/HoRNDIS.git -b BigSur
-    cd HoRNDIS
-    make
-    ```
+   ```sh
+   git clone https://github.com/thpryrchn/HoRNDIS.git -b BigSur
+   cd HoRNDIS
+   make
+   ```
 
-6. HoRNDIS をインストールします
+3. HoRNDIS をインストールします
 
    `build/pkg` に `HoRNDIS-kext.pkg` が作成されているので、ダブルクリックして、指示に従いインストールします。
 
-8. USB コントローラの動作モードが `peripheral` に変更された Brain を PC に接続して Gadget を有効化します
+4. USB コントローラの動作モードが `peripheral` に変更された Brain を PC に接続して Gadget を有効化します
 
+5. システム設定で、Brain に対応するネットワークインターフェースに対してインターネット共有を有効化します
+
+6. Brain からインターネットへの疎通を確認します
+
+   Brain からインターネットに `ping` などで到達できるか確認してください。
 
 ## Linux の設定
 
