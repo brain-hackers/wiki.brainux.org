@@ -12,6 +12,11 @@ Brainux では、debootstrap で生成した rootfs に加えて以下のパッ�
 |パッケージ名|
 |:-|
 |locales|
+|curl|
+|ca-certificates|
+|gnupg|
+|debian-archive-keyring|
+|apt-transport-https|
 |dialog|
 |sudo|
 |libjpeg-dev|
@@ -25,10 +30,9 @@ Brainux では、debootstrap で生成した rootfs に加えて以下のパッ�
 |xinput-calibrator|
 |xorg-dev|
 |x11-apps|
+|x11-ico-dvd|
 |xinit|
 |jwm|
-|weston|
-|xwayland|
 |bash|
 |tmux|
 |vim|
@@ -48,6 +52,7 @@ Brainux では、debootstrap で生成した rootfs に加えて以下のパッ�
 |usbutils|
 |iw|
 |fake-hwclock|
+|systemd-timesyncd|
 |build-essential|
 |flex|
 |bison|
@@ -68,7 +73,6 @@ Brainux では、debootstrap で生成した rootfs に加えて以下のパッ�
 |ssh|
 |openssh-client|
 |avahi-daemon|
-|curl|
 |wget|
 |git|
 |network-manager|
@@ -79,5 +83,6 @@ Brainux では、debootstrap で生成した rootfs に加えて以下のパッ�
 |ipython3|
 |netsurf-gtk|
 |fcitx-anthy|
+|brain-config|
 |libpam0g-dev|
 |libxcb-xkb-dev|
