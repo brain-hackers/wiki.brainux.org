@@ -55,22 +55,23 @@ Linuxのカーネルの準備ができたら、カーネルの上で動くアプ
 
 ## パッケージの追加方法 (任意)
 
-追加でほしいパッケージを `./tools/setup_debian.sh` の51行目あたりに追記します。
+追加でほしいパッケージを `./os-brainux/setup_brainux.sh` の92行目あたりに追記します。
 
 実際に追記した例を以下に示します。
 
 ```diff
-    42    apt install -y dialog sudo \
-    43                   libjpeg-dev libfreetype6 libfreetype6-dev zlib1g-dev \
-    44                   xserver-xorg xserver-xorg-video-fbdev xserver-xorg-dev xorg-dev x11-apps \
-    45                   openbox obconf obmenu \
-    46                   weston xwayland \
-    47                   bash tmux vim htop \
-    48                   midori pcmanfm lxterminal xterm gnome-terminal fonts-noto-cjk \
-    49                   dbus udev build-essential flex bison pkg-config autotools-dev libtool autoconf automake \
-    50                   python3 python3-dev python3-setuptools python3-wheel python3-pip python3-smbus \
-    51                   resolvconf net-tools ssh openssh-client avahi-daemon
-+   52    apt install -y fbterm uim-fep uim-mozc
+    81    apt install -y dialog sudo \
+    82               libjpeg-dev libfreetype6 libfreetype6-dev zlib1g-dev \
+    83               xserver-xorg xserver-xorg-video-fbdev xserver-xorg-dev xserver-xorg-input-evdev xinput-calibrator xorg-dev x11-apps x11-ico-dvd xinit \
+    84               jwm \
+    85               bash tmux vim htop \
+    86               midori pcmanfm lxterminal xterm gnome-terminal fbterm uim-fep uim-anthy fonts-noto-cjk \
+    87               dbus udev alsa-utils usbutils iw fake-hwclock systemd-timesyncd\
+    88               build-essential flex bison pkg-config autotools-dev libtool autoconf automake device-tree-compiler \
+    89               python3 python3-dev python3-setuptools python3-wheel python3-pip python3-smbus \
+    90               resolvconf net-tools ssh openssh-client avahi-daemon wget git \
+    91               network-manager zip neofetch sl python3-numpy ipython3 netsurf-gtk fcitx-anthy
++   92    apt install -y uim-mozc
 ```
 
 [SD カードへのコピー](/build/copy-sd-card/)に続く…
