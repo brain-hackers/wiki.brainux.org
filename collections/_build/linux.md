@@ -71,7 +71,7 @@ Linuxのカーネルの準備ができたら、カーネルの上で動くアプ
     89               python3 python3-dev python3-setuptools python3-wheel python3-pip python3-smbus \
     90               resolvconf net-tools ssh openssh-client avahi-daemon wget git \
     91               network-manager zip neofetch sl python3-numpy ipython3 netsurf-gtk fcitx-anthy
-+   92    apt install -y fbterm uim-fep uim-mozc
++   92    apt install -y uim-mozc
 ```
 
 [SD カードへのコピー](/build/copy-sd-card/)に続く…
