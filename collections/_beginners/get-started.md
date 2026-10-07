@@ -227,7 +227,7 @@ Shift キー・Ctrl キー・Alt キーは現実のキーボードに近い配�
 
 [SHARP Brain](https://github.com/tslmy/sharp-brain-keyboard-overlay) は Buildroot 版に標準で含まれています。Debian/Brainux 版では Packagecloud からインストールできます。以下に SHARP Brain の表示例を示します。
 
-<img src="/assets/images/sharp-brain-overlay.png" width=640px>
+<img src="/assets/images/sharp-brain-overlay.jpg" width=640px>
 
 
 ## 電源を切る
