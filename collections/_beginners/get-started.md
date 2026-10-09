@@ -223,12 +223,9 @@ Shift キー・Ctrl キー・Alt キーは現実のキーボードに近い配�
 
 <img src="/assets/images/keymap.png" width=640px>
 
-キーマップのすべてのレイヤを覚える必要はありません。修飾キーを押している間だけ、キーマップのオーバーレイを表示する方法もあります。macOS の [KeyClu](https://sergii.tatarenkov.name/apps/keyclu/) や [CheatSheet](https://cheatsheet-mac.en.softonic.com/mac) と同じように、押しているキーに応じたキーの組み合わせを画面上で確認できます。
-
-[SHARP Brain](https://github.com/tslmy/sharp-brain-keyboard-overlay) は Buildroot 版に標準で含まれています。Debian/Brainux 版では Packagecloud からインストールできます。以下に SHARP Brain の表示例を示します。
+修飾キーを押している間だけ、キーマップのオーバーレイを表示する[ツール](https://github.com/tslmy/sharp-brain-keyboard-overlay)も利用可能です。Debian/Brainux 版では `apt install keyoverlay` でインストールできます。Buildroot 版には標準で含まれています。以下に表示例を示します。
 
 <img src="/assets/images/sharp-brain-overlay.jpg" width=640px>
-
 
 ## 電源を切る
 
