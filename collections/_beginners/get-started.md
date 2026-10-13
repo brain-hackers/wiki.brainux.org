@@ -223,6 +223,9 @@ Shift キー・Ctrl キー・Alt キーは現実のキーボードに近い配�
 
 <img src="/assets/images/keymap.png" width=640px>
 
+修飾キーを押している間だけ、キーマップのオーバーレイを表示する[ツール](https://github.com/tslmy/sharp-brain-keyboard-overlay)も利用可能です。Debian/Brainux 版では `apt install keyoverlay` でインストールできます。Buildroot 版には標準で含まれています。以下に表示例を示します。
+
+<img src="/assets/images/sharp-brain-overlay.jpg" width=640px>
 
 ## 電源を切る
 
